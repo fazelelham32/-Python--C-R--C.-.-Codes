@@ -1,11 +1,11 @@
 #Python-Projects
-#Anaconda Programming
-#Harmonic series and square root of numbers - Newton's method - Raphson
+#Harmonic series and the square root of numbers - Newton's method - Raphson
 
-Example: Paying a specific tax rate based on income level:
+For example, Paying a specific tax rate based on income level:
 By way of nested if statements
 If my income is zero, my tax rate is also zero. Otherwise, if it is less than 8.925 (i.e. the income is not negative) - the tax rate should be 10%, as a decimal number it is 0.1, otherwise I have to check if it is smaller than 36.250 and in the same way I write these conditions inside if else.
 Hey, we are increasing the indentation level. In order to use fewer characters, we simplify the program.
+
 Question: What is incorrect in the summary calculations for calculating the tax rate?
 
 #Several applications of the Harmony series
@@ -25,3 +25,92 @@ The more I repeat this method, the closer I am to the result. I continue up to 1
 To increase the accuracy, I calculate EPSILON = 1e-15.
 First, I start with t=c until this difference is while abs(t-c/t) > (EPSILON * t) and I do that update.
 The new t becomes the previous t plus c/t divided by 2:
+
+#Problem: Bankruptcy of the gambler
+A gambler has money - he gambles for every bet - if a lion comes up, one dollar is added to his money, and if a line comes up, one dollar is reduced.
+As shown in the first curve - the first two times the line has come and the money has decreased, and the third time the milk has come, the money has been added - so much so that the money reaches the same amount as we determined from the beginning. Or that the money runs out and reaches zero (second curve).
+Either play completely or reach the goal he wants from the beginning.
+
+We want to see how much milk or line we need on average and what is our range ?
+
+Monte Carlo simulation: we have a random variable, a random variable can take different values,
+For example, a coin toss can take different values, coin toss can take two values.
+Its value is not known until it is tested, that's why they are called random variables.
+We assign a probability to each of them - here are two values, but in general it can have more values -The purpose of Monte Carlo simulation is that a random variable can estimate the mathematical expectation or expected value. If I give you a coin that you don't know the probability of tails and its line, you want to know how many tails will come up in how many tosses, what is the probability of tails?
+You toss the coin many times and write down the result of each toss.
+Here we have three inputs, first, we read the input values, the more the number of tests, the more accurate the result.
+Three inputs: initial inventory value - target value - number of repetitions (how many times you want to repeat the test.)
+I draw and line many times - I do it through the random function on the computer - if a lion comes, I increase my money by one dollar, if a line comes, I decrease my money by one dollar.
+For example, I will repeat it 1000 times and I will repeat it 1000 times
+For instance, I won 300 times and lost 700 times, Probability of winning: 300/1000=30%
+Every time a step is added or subtracted, I am betting - to calculate how many bets, we need to add up all the bets and divide by the number = average.
+If I start with the amount of stake and want to reach the goal, how likely is it to win this game? If the probability is high, I will participate in this game, if the probability is low, I will not participate.
+The answer to the second question: Count the number of stairs. This test is only one time.
+
+I want to see if I have time to participate in this game ?
+
+#Simulation and analysis of results:
+The libraries I want because I want to receive input from the command line - the sys library
+And because I want to generate random numbers, I use the random library.
+First, we need to specify our inputs and outputs. One of our words - the value of the initial inventory that we decided to read from the command line. The stake is an integer, and I convert argv[1] to an integer - and store the ino variable Stake.
+I am reading the target from the command line for the same reason - and I want to repeat the test several times, this is an integer that I read from the command line, I also want two outputs, one is the probability of winning and one is betting - in order to calculate the winnings. I have to divide the number of wins by the total number of tests, wins=0, so I put the number of wins at zero first, and I also want to calculate the number of bets.
+I want to repeat the whole process t times. Trails is a number of iterations so I can use a for loop. (We already learned that we use the for loop when there is a certain number of repetitions.)
+This loop repeats a thousand times - now I want to use simulation - focus on one precipitation. I put the starting value the same as the initial value of the Stake. This cash is the amount of our money that increases and decreases. The stake is fixed and I started with an initial $10.
+How long should I continue the game? As long as we have cash, it means that cash is greater than zero or less than a goal.
+Now I repeat - I have to count the number of coin tosses
+So, I add one to the bet value = that is, we are going to do one coin toss.
+Now I want to do a tap or a line, as we said, I use the random library.
+That is, subtraction from zero to one is less than 2 = produce the numbers zero and one, 50% of the time it produces zero, and 50% of the time it produces one.
+We set this ==0 if random. randrange(0,2) is equal to zero if it is zero, we consider it as a winning result and increase the amount of the balance by one unit, otherwise, if it is a result, we consider it as a loss - so cash I will decrease by one unit.
+Now I check, and I put cash equal to the goal.
+We have to put two equals for the sake of comparison. So, in this case, I won, so I will add one to the number of wins. Now I have to generate the outputs with two commands
+
+I want to calculate the chance of winning, what is the chance of winning? 
+
+Of the total number of these 1000, we have to make Trails
+So, this is output as the chance of winning, so I convert it into a string, I want to express it as a percentage, so I multiply 100 by the number of wins divided by the total number of tests we did.
+The average number of required bets = I added the total number of all the bets we made in the game, just divide it by the total number of trials = the average number of required bets
+Our first installment is also variable, the first time we added one bet each time divided by the total number of trials.
+To run the program - because it wants three input modules, I have to run it from the command line - I type cmd=cd Desktop because my program is saved on the desktop, I type this.
+Let's get the Dir directory once and make sure it's here - after we're sure, with the Python command - the name of the program, and then the entries we want 10 times, 20 times and because I want to reach 1000 times - if everything is correct, I have a 52% chance of winning And the average number of bets is 100 - if I want the results to be more accurate, then the number of tests should be increased.
+10 20 10000 times and this brings us closer to the real number.
+
+#Retrieving a stack of sheets as a function of the array:
+We want to generate a deck of cards and choose a random card or randomly choose a hand so that we can play a card with the shuffle algorithm.
+If a variable is going to remain constant, we define it with uppercase letters in Python.
+
+#Representation of cards:
+Randomly selecting a card: We call the desired function from the random library.
+We make an index from zero to 13:
+I just paste rank, suit, and print it.
+Instead of the two middle lines, we can use the choice function, which takes a list and generates a random function.
+
+#Create a batch of sheets and print them in the output:
+
+How are the cards printed?
+
+deck means a deck of 52 cards
+We write two nested loops.
+I pasted rank as a string to suit.
+So we produce a card.
+Swapping: It means a random permutation where the probability of producing each permutation is equal: the exchange of the elements of an array
+The first time is on the first element - each time one of the elements until it reaches the last element
+In the first element, i is equal to r, so this card is moved with itself, so there is no change.
+I go forward, and this time I generate a random number, it can be from zero to one
+And so I continue.
+
+#Fisher: The Knuth algorithm produces a uniformly random permutation of the input array in linear time. The advantage of this algorithm is its fastness or linear time. This means that this algorithm can run very fast and randomly put elements together.
+Objective: Given an array, rearrange its elements in random order.
+ 
+#Hitting Algorithm:
+The total number of sheets is 52
+I want from zero to i from the randrange function. As a result, I generate a random number. Now I move house number i with deck r.
+As a result, it creates a random shuffle of 52 cards for us.
+
+#Choosing a few random cards: I use the Shuffle algorithm
+This is the combination problem where we want to choose m from among n different ones. Repetition is not allowed.
+which we introduce in the code line.
+perm line: selection of numbers is repetitive.
+In the last loop, I select one element at a time and replace it with i.
+Perm[i], perm[r] : multiple assignment
+It prints the selection of the first presentation, which are random, in iHome.
