@@ -1,0 +1,27 @@
+#Python-Projects
+#Anaconda Programming
+#Harmonic series and square root of numbers - Newton's method - Raphson
+
+Example: Paying a specific tax rate based on income level:
+By way of nested if statements
+If my income is zero, my tax rate is also zero. Otherwise, if it is less than 8.925 (i.e. the income is not negative) - the tax rate should be 10%, as a decimal number it is 0.1, otherwise I have to check if it is smaller than 36.250 and in the same way I write these conditions inside if else.
+Hey, we are increasing the indentation level. In order to use fewer characters, we simplify the program.
+Question: What is incorrect in the summary calculations for calculating the tax rate?
+
+#Several applications of the Harmony series
+In general, the harmony series is as follows:
+For this range, I add 1/i to the current total each time.
+and finally prints the total in the output. In fact, we are approximating here.
+Because Ln is from the math library, we must first import this library.
+#The second application of the Harmony series:
+Calculating the roots of numbers: turns the problem of finding roots into the problem of finding roots
+
+#Newton-Raphson method
+The goal is to find the root of the function (curve). Idea: Newton-Raphson method
+Here is my function: f(x) - I start from an arbitrary point - at that point (slope) and then I update t - again at this point I calculate the derivative and based on... I will get closer as you can see in the picture above.
+I want to know where the desired function is zero.
+That is, the first time I took t to be zero.
+The more I repeat this method, the closer I am to the result. I continue up to 15 decimal places.
+To increase the accuracy, I calculate EPSILON = 1e-15.
+First, I start with t=c until this difference is while abs(t-c/t) > (EPSILON * t) and I do that update.
+The new t becomes the previous t plus c/t divided by 2:
