@@ -1,0 +1,2733 @@
+# Capstone: Retrieving, Processing, and Visualizing Data with Python
+
+
+
+### Capstone Overview
+Welcome to the Python for Everybody Capstone. We want the capstone to be a different experience than the rest of the courses. Since we are a much smaller course I want to make sure that there is lots of opportunity for student-to-student interactions. We understand that some of you will be in a hurry to finish and that others will want to spend time interacting with the instructional staff and other students. 
+We have designed this course with only one required quiz (Week 1). If you are limited on time, you may complete the quiz and finish quickly.
+If you would like a more discovery-oriented experience, we have created an Honors Track so you can complete projects with our community of learners, and earn additional recognition on your certificate.  The Honors Track contains three optional, peer-graded assignments (Weeks 2, 4, and 6). Coursera’s guide to Honors assignments can help you decide if this path is for you.
+A goal of the Capstone is to set up structures to let you learn from each other instead of just making more lectures and assignments. We have done several things to make that work:
+•	In this course you can paste any code into the forums that you want to discuss with other students about problems you are having. By now we assume you know how to code.
+•	We have used a Wiki system provided by Coursera to allow you to edit pages and upload your information and share your information with other students. These Wiki pages are visible to other Coursera students, so do not post any personal information here.
+•	In the project side of the class it is perfectly fine for students to approach a problem as a team and use other technologies like Slack or Github to coordinate their work.
+You can see that a big theme of this Capstone is to get you to contribute to the course. And of course since this is the first time we are using some of this pedagogy, there will be plenty of room for improvement. We will be watching the forums closely and may adjust the course as it progresses based on your comments, issues, and suggestions.
+Help Us Learn More About You!
+As part of getting to know you better, your backgrounds, your interest in this specific course and in digital education in general, we at the University of Michigan have crafted a survey that should only take a few minutes to complete. Our goal is to keep our communication with you focused on learning and staying in touch, but we believe that both this and an end-of-course survey are important to our mutual educational goals.
+
+## Capstone: Retrieving, Processing, and Visualizing Data with Python
+
+
+
+Capstone Overview
+Welcome to the Python for Everybody Capstone. We want the capstone to be a different experience than the rest of the courses. Since we are a much smaller course I want to make sure that there is lots of opportunity for student-to-student interactions. We understand that some of you will be in a hurry to finish and that others will want to spend time interacting with the instructional staff and other students. 
+We have designed this course with only one required quiz (Week 1). If you are limited on time, you may complete the quiz and finish quickly.
+If you would like a more discovery-oriented experience, we have created an Honors Track so you can complete projects with our community of learners, and earn additional recognition on your certificate.  The Honors Track contains three optional, peer-graded assignments (Weeks 2, 4, and 6). Coursera’s guide to Honors assignments can help you decide if this path is for you.
+A goal of the Capstone is to set up structures to let you learn from each other instead of just making more lectures and assignments. We have done several things to make that work:
+•	In this course you can paste any code into the forums that you want to discuss with other students about problems you are having. By now we assume you know how to code.
+•	We have used a Wiki system provided by Coursera to allow you to edit pages and upload your information and share your information with other students. These Wiki pages are visible to other Coursera students, so do not post any personal information here.
+•	In the project side of the class it is perfectly fine for students to approach a problem as a team and use other technologies like Slack or Github to coordinate their work.
+You can see that a big theme of this Capstone is to get you to contribute to the course. And of course since this is the first time we are using some of this pedagogy, there will be plenty of room for improvement. We will be watching the forums closely and may adjust the course as it progresses based on your comments, issues, and suggestions.
+Help Us Learn More About You!
+As part of getting to know you better, your backgrounds, your interest in this specific course and in digital education in general, we at the University of Michigan have crafted a survey that should only take a few minutes to complete. Our goal is to keep our communication with you focused on learning and staying in touch, but we believe that both this and an end-of-course survey are important to our mutual educational goals.
+
+
+All of the book materials are available under a Creative Commons Attribution-NonCommercial 3.0 Unported License. The slides, audio, assignments, auto grader and all course materials other than the book are available from http://www.py4e.com/materials under the more flexible Creative Commons Attribution 3.0 Unported License. If you are curious as to why the "NC" variant of Creative Commons was used, see Appendix D of the textbook or search through my blog posts for the string "copyright".
+Academic Innovation Policy on Learner Engagement Conduct
+
+I.  Policy
+The University of Michigan strives to create and maintain a community that enables each person to reach their full potential. To do so requires an environment of trust, openness, civility and respect. The Center for Academic Innovation (Academic Innovation) at the University is firmly committed to a policy of prohibiting behaviors which adversely impact a person’s ability to participate in the scholarly, research, educational, patient care and service missions of the University enabled by Open Learning Initiatives (OLIs) the University offers through a variety of technological platforms (each an OLI Platform).  
+Academic Innovation has a compelling interest in ensuring an environment in which productive work and learning may thrive. At the same time, Academic Innovation has an interest in respecting freedom of speech and protecting academic freedom and in preserving the widest possible dialogue within its instructional and research settings. As such, Academic Innovation recognizes and expects there to be open discourse and exchanges that may cause some University personnel and OLI learners (collectively, OLI Community Members) to feel uncomfortable. It is through such exchanges that the flow of ideas and countervailing thoughts and experiences are expressed which can facilitate deeper understanding and learning. However, the University also expects its OLI Community Members to engage in such interactions in a professional manner. 
+
+It is the intent of this policy to protect academic freedom and to help preserve the highest standards of academic discourse and scholarship in order to advance the mission of the University. This policy is specific to conduct which is not protected and covered under the principles of freedom of speech and academic freedom but rather conduct that the University community would view as counter to its norms and expectations and which hinders other members of the community in the exercise of their professional responsibilities and academic freedoms. Academic Innovation is prepared to act to prevent or remedy behaviors that interfere with, or adversely affect, an OLI Community Member’s ability to learn or do their job.   
+
+In addition to protecting academic freedom, it is the position of the University of Michigan that a clear sense of academic responsibility is fundamental to an honest and collaborative educational environment, and behavior consistent with this principle is expected of all OLI Community Members. As such, the University is committed to ensuring its OLIs are free from academic misconduct while maintaining academic integrity at all times.
+
+While the University seeks to create safe and welcoming OLI communities, please be advised that learners who share any personal information over OLI Platforms, including personal contact information, do so at their own risk. Before volunteering personal information over OLI Platforms, please note that the University does not apply the same data protection processes and safeguards for OLI data as it does for University-enrolled-student data. OLI Community Members are encouraged to use the direct and group communication tools integrated into or offered in connection with OLI Platforms, wherever available. While the University does not maintain, sponsor, or review groups created by non-University parties off of the OLI Platforms, the University may at its own discretion remove posts encouraging learners to share contact information and/or join external groups in its discretion.
+
+Finally, Academic Innovation may share certain OLI learner data obtained from OLI Platforms, including general OLI course data, OLI Platform Activity information and demographic data from surveys, with third parties for scholarly research purposes in compliance with both vendor contractual obligations and applicable laws.
+ II. Definitions
+The following types of behaviors may be subject to sanction, including learner removal from the OLI in accordance with the appropriate procedures.
+These behaviors include oral, written, visual or physical actions by an OLI learner that:
+ a) Have the purpose or effect of unreasonably interfering with an individual’s employment or educational performance; and/or
+ b) Have the purpose or effect of creating an intimidating, hostile, offensive or abusive climate for an individual’s employment, academic pursuits or participation in the OLI. 
+Some examples of conduct that may violate this policy include, but are not limited to:  threatening behavior, actions or comments; bullying behavior (defined as a persistent pattern of negative behavior based upon a real or perceived power imbalance which belittles another member of a unit);  disruption of functions or activities sponsored or authorized by the University; unwelcomed solicitation of personal contact information from a fellow OLI Community Member that does not relate to a valid theme or assessment from the OLI; encouraging learners to join external groups with the intent to solicit payment of any kind, or to facilitate academic integrity violations; promotion of non-University organizations not directly related to the OLI or otherwise validated by the University;  solicitation of products or services that are not specifically recommended by University personnel; threats of physical harm to, or harassment of another member of the OLI community; and behavior that results in a hostile working or learning environment. This list is not exhaustive, and OLI Community Members may be subject to sanction and disciplinary action, including removal from a particular OLI, for any type of conduct which, although not specifically enumerated, meets the standard for unacceptable behavior set forth above.
+In addition, Academic Innovation considers any of the following behaviors to be academic misconduct for purposes of University of Michigan OLIs:
+•	Copying from another’s exam or other evaluative assignment
+•	Submitting work that was previously used for another OLI without the explicit endorsement or instruction of the University of Michigan
+•	Discussing or sharing information about questions or answers on an exam or other evaluative assignment without explicit endorsement or instruction of the University of Michigan
+•	Allowing another person other than  yourself to take an exam or complete an assignment
+•	Knowingly presenting another person's ideas, findings, images or written work as one's own by copying or reproducing without acknowledgement of the source
+•	Using more than one login in a single OLI with malicious or fraudulent intent
+
+ III.  Alleged Violations of this Policy
+Alleged violations of this policy should be reported on a timely basis to Academic Innovation through Academic-Innovation-Abuse@umich.edu.  Academic Innovation will ensure that appropriate action is taken to address the situation.  
+The University will take appropriate steps to ensure that a person who, in good faith, reports or participates in a resolution of a concern brought forward under this policy is not subject to retaliation.  In addition, subjecting such a person to retaliation is itself a violation of this policy.   
+Violation of this policy may result in appropriate sanction or disciplinary action.  If removal from a particular OLI is proposed, the matter will be addressed through the appropriate procedure connected with the OLI Platform.  
+Coming from Python 2 - Encoding Data in Python 3
+If you took the earlier courses in Python 2, you need to gain a brief understanding of how to handle networked data with character sets other than the "Latin" character sets. When data is moved between systems, characters like (次 - Tsugi) or (코스 - Koseu) must be properly encoded as they are passed between different systems as Unicode data. The most common Unicode encoding is UTF-8.
+We have included the lecture Unicode Characters and Strings in this course specifically to give you a brief review of data encoding in Python 3 to get you quickly up to speed.
+So, we started this entire course 
+printing hello world and I just said "Hello world," and out comes hello world. 
+It'd be nice if that was super simple. 
+In 1970, it was simple because there was pretty much one character set. 
+Even in 1970, when I started, 
+we didn't even have a lowercase characters. 
+We just had uppercase characters, 
+and I'll tell you we were happy when we just had uppercase characters. 
+You kids these days with your lowercase characters, 
+and numbers, and slashes, and stuff. 
+So, the problem that computers have is they have to come up with a way, 
+I mean, computers don't understand letters 
+actually what computers understand his numbers. 
+So, we had to come up with a mapping between letters and numbers. 
+So, we came up with a mapping, 
+and there's been many mappings historically. 
+The one that is the most common mapping of the 1980s, 
+is this mapping called ASCII, 
+the American Standard Code for Information Interchange and it says 
+basically this number equals this letter. 
+So for example, the number for Hello World, 
+for capital H the number is 72. 
+Somebody just decided that the capital H was going to be 72 lowercase e, 
+number is 101 and new line is 10. 
+So if you were really and truly going to look at what was going on inside the computer, 
+it's storing these numbers but the problem is, 
+is there are 128 of these, 
+which means that you can't put every character into a 0-128. 
+So, in the early days, 
+we just dealt with whatever characters are possible. 
+Like I said, when I started you could only do uppercase, 
+you couldn't even do lowercase. 
+So, there is this function as long as you're dealing with simple values that you can say, 
+"Hey, what is the actual value for the letter H?" 
+and it's called ord which stands for ordinal. What's the ordinal? 
+What does the number corresponding to H? 
+That's 72. 
+
+
+What's the number corresponding to lowercase e? 
+It's 101, and what's a number corresponding to new line? 
+That is a 10. Remember, new line is a single character. 
+This also explains why 
+the lowercase letters are all greater than the uppercase letters because they're ordinal. 
+For ASCII now, there's so many characters sites but 
+just for the default old school 128 characters that we could represent with ASCII, 
+the uppercase letters were had a lower ordinal than lowercase letters. 
+So, Hi is less than z, 
+z, z, all lowercase and that's because all lowercase letters are less. 
+I mean all uppercase letters are less than 
+all lowercase letters actually this could be a, a, a. 
+That's what I should've said there, okay. 
+So, don't worry about that just know that they are 
+all numbers and in the early days, life was simple. 
+We would store every character in a byte of memory otherwise known as 8-bits of memory, 
+it's the same thing when you say I have a many gigabyte USB stick, 
+that's a 16 gigabyte USB stick that means there are 
+16 billion bytes of memory on there which means we could 
+put 16 million characters down here in the old days. 
+Okay? So, the problem is, is the old days, 
+we just had so few characters that we could put one character in a byte. 
+So, the ord function tells us the numeric value of a simple ASCII character. 
+So, like I said, 
+if you take a look at this, 
+the e is 101 and H, 
+capital H is 72 and then the new line which is here at line feed which is 10. 
+Now, we can represent these in hexadecimal which is base 16, 
+or octal which is base eight, 
+or actual binary which is what's really going on which has nothing but zeroes and ones, 
+but these are just this is the binary for 10, 
+0001010 and so these are just, 
+these three are just alternate versions of these numbers. 
+The numbers go up to 127, and if you look at the binary, 
+you can see in this, 
+this is actually seven bits or binary, 
+you can see that it's all one. 
+So, it starts at all zeros goes into all ones. 
+So, it's like zeros and ones are what the computer's always do. 
+If you go all the way back to the hardware, 
+the little wires and stuff, 
+the wires or character are taking zeros and ones. 
+So, this is what we did in 
+the 60s and 70s we just said whatever we're capable of squeezing in, 
+we're just totally happy, 
+we're not going to have anything tricky and like I said, 
+halfway you know early in my undergraduate career, 
+I started to see lowercase letters I'm like, 
+"Oh that's really beautiful." 
+lowercase letters. Now, the real world is nothing like this. 
+There are all kinds of characters and they had to 
+come up with a scheme by which we could map these characters 
+and for awhile there were a whole bunch of 
+incompatible ways to represent characters other than these ASCII, 
+also known as Latin character sets, 
+also known as Arabic character sets. 
+These other character sets just completely invented their own way of representing and so, 
+you have these situations where you know Japanese computers pretty much 
+couldn't talk to American computers or European computers at all. 
+I mean the Japanese computers just had their own way of representing characters 
+and American computers had their own way of representing 
+characters and they just couldn't talk, 
+but they invented this thing called Unicode. 
+So, Unicode is this universal code for 
+hundreds of millions of different characters and hundreds of different character sets, 
+so that instead of saying, "Oh sorry. 
+You don't fit with your language from some South Sea Island." 
+it's okay we've got space in Unicode for that. 
+So, Unicode has lots and lots of character not 128, 
+lots and lots of characters. 
+So, there was a time like I said in the 70s or the 80s 
+where everyone has something different and even like in the early 2000s as the Internet, 
+what happened was as the Internet came out, 
+it became unimportant issue to have as a way to exchange data. 
+So we had to say, "Oh well, 
+it's not sufficient for Japanese computers to talk to Japanese computers and 
+American computers to talk to 
+America computers when Japanese and American commuters to exchange data.". 
+So, they built these character sets and so there is Unicode which is this abstraction of 
+all different possible characters and there are 
+different ways of representing them inside of computers. 
+So, there's a couple of simple things that you might think are 
+good ideas that turn out to be not such good ideas, although they're used. 
+So the first thing we did is these UTF-16, 
+UTF-32 and UTF-8 are basically ways of representing a larger set of characters. 
+Now the gigantic one is 32-bits which is four bytes, 
+it's four times as much data for a single character and so that's quite a lot of data. 
+So, you're dividing the number of characters 
+by four so if this is 16 gigabytes it can only still, 
+it can only handle four billion characters or something, divided by four, right? 
+Four bytes per character and so that's not so efficient and then some there's 
+a compromise or like two bytes but then you have to pick this can do all the characters, 
+this can do lots of single lots of character sets, 
+but it turns out that even though you might instinctively think that like 
+UTF-32 is better than UTF-16 and UTF-8 is the worst. 
+It turns out that UTF-8 is the best. 
+So UTF-8 basically says, 
+it's either going to be one, two, 
+three or four characters and there's 
+little marks that tell it when to go from one to four. 
+The nice thing about it is that UTF overlaps with ASCII. 
+Right? So, if the only characters you're putting 
+in are the original ASCII or Latin-1 character set, 
+then UTF-8 and ASCII are literally the same thing. 
+Then, use a special character that's not part of ASCII to indicate 
+flipping from one byte characters to two byte characters, 
+or three byte characters, or four byte. 
+So, it's a variable length. 
+So, you can automatically detect, 
+you can just be reading through a string and say, 
+"Whoa, I just saw this weird marker character, 
+I must be in UTF-8." 
+Then if I'm in UTF-8, 
+than I can expand this, 
+and find represent all those character sets, 
+and all those characters in those character sets. 
+So, what happened was, is they went through all these things, 
+and as you can see from this graph, 
+the graph doesn't really say much other than the fact that UTF-8 is awesome, 
+and getting awesomer, and every other way of representing 
+data is becoming less awesome, right? 
+This is 2012, so that's a long time ago. 
+So, this is like UTF-8 rocks. 
+That's really because as soon as these ideas came out, 
+it was really clear that UTF-8 is 
+the best practice for encoding data moving between systems, 
+and that's why we're talking about this right now. 
+Finally, with this network, 
+we're doing sockets were moving data between systems. 
+So, you're American computer might be talking to a computer in Japan, 
+and you got to know a character sets coming out, right? 
+You might be getting Japanese characters even though everything I've shown you is 
+non-Japanese characters or orient our Asian characters or whatever, right? 
+So, UTF-8 turns out to be the best practice. 
+If you're moving a file between 
+ASCII systems or if you're moving network data between two systems, 
+the world recommends UTF-8, okay? 
+So, if you think about your computer, inside your computer, 
+the strings that are inside your Python like x equals hello world, 
+we don't really care what their syntax is. 
+If there is a file, usually the Python 
+running on the computer in the file had the same character set, 
+they might be UTF-8 inside Python, 
+it might be UTF-8 inside. 
+But we don't care, you open a file, 
+and that's why we didn't have to talk about this 
+we're opening files even though you might 
+someday encounter a file that's different than your normal character set, it's rare. 
+So, files are inside the computer, 
+strings are inside the computer, 
+but network connections are not inside the computer, 
+and we get databases, 
+we're going to see they're not inside the computer either. 
+So, this is also something that's changed from Python two to Python three, 
+it was actually a big deal, a big thing. 
+Most people think it's great, I actually think it's great. 
+Some people are grumpy about it, 
+but I think those people just are people that fear change. 
+So, there were two strings in Python. 
+There were a normal old string and a Unicode string. 
+So, you could see that Python two would be able to make a string constant, 
+and that's type string, 
+and it would make a Unicode constant by prefixing U before the quote. 
+That's a separate thing, 
+and then you had to convert back and forth between Unicode and strings. 
+What we've done in Python three is, 
+this is a regular string, 
+and this is a Unicode string, 
+but you'll notice they're both strings. 
+So, it means that inside the world of Python, 
+if we're pulling stuff and you might have to convert it, 
+but inside Python everything is Unicode. 
+You don't have to worry about it every string is the same, 
+whether it has Asian characters, 
+or Latin characters, or Spanish characters, 
+or French characters, is just fine. 
+So, this simplifies this. 
+But, then there are certain things that we're going to have to be responsible for. 
+So, the one string that we haven't used yet, 
+but becomes important, and it's present in both Python two and Python three. 
+Remember how I said in the old days a character, 
+and a byte are the same thing. 
+So, there's always been a thing like a byte string, 
+and I knew this by prefixing the b, 
+and that says, "This is a string of bytes" that mean this character. 
+If you look at the byte string in Python two, 
+and then you look at a regular string in Python two they're 
+both type string the bytes are the same as string and a Unicode is different. 
+So, these two are the same in Python two and these two are different in Python two. 
+I am not doing a very good picture of that. 
+So, the byte string and the regular string are the same, 
+and the regular string and the Unicode string are different. 
+So, what happened is in Python three, 
+the regular string and the Unicode string are the same, and now, 
+the byte string and the regular string are different, okay? 
+So, bytes turns out to be wrong on encoded, 
+that might be UTF-8 might be UTF-16, it might be ASCII. 
+We don't know what it is, 
+it we don't know what it's encoding is. 
+So, it turns out that this is the thing we have to 
+manage when dealing with data from the outside. 
+So, in Python three, all the strings internally are unicode, not UTF-8, 
+not UTF-16 not UTF-32, 
+and if you just open a file pretty much usually works, 
+if you talk to a network now, 
+we have to understand. 
+Now, the key thing is is we have to decode this stuff, 
+we have to realize what is the character set of the stuff we're pulling in. 
+Now, the beauty is, it's because 
+99 percent or maybe a 100 percent of 
+stuff you're ever going to run across just uses UTF-8, 
+it turns out to be relatively simple. 
+So, there's this little decode operation. 
+So, if you look at this code right here, 
+when we talked to an external resource, 
+we get a byte array back like the socket gives us an array of bytes which are characters, 
+but they need to be decoded. 
+So, we know if you have UTF-8, UTF-16 or ASCII. 
+So, there is this function that's part of byte arrays, 
+so data.decode says, "Figure this thing out" and 
+the nice thing is as you can tell it what character set it is, 
+but by default it assumes UTF-8 or ASCII 
+dynamically because ASCII and UTF-8 are up it's compatible with one another. 
+So, if it's like old data you're probably getting 
+ASCII if it's newer data your pride getting UTF-8. 
+Literally, it's a law of diminishing returns like it's one, 
+and it's very rare that you get anything other than those two. 
+So, you just almost never have to tell it what it is, right? 
+So, you just say decode it, 
+look at it, it might be ASCII, it might be UTF-8, 
+but whatever it is, by the time it's done with that, 
+it's a string, it's all Unicode inside of this. 
+So, this is bytes, 
+and this is Unicode. 
+So, decode goes from bytes to Unicode. 
+You also can see when we're looking at the sending of the data, 
+we're going to turn it into bytes. 
+So, encode takes this string, 
+and makes it into bytes. 
+So, this is going to be bytes that are properly encoded in UTF-8. 
+Again, you could have put a thing here UTF-8, 
+but it just assumes UTF-8, 
+and this is all ASCII. 
+So, it actually doesn't do anything. 
+So, but that's, okay. 
+Then, we're sending the bytes out the commands. 
+So, we have we have to send the stuff out, 
+then we receive it, we decode it, 
+we send it, we encode it. 
+Now, in this world is where the UTF-8 is. 
+Here, we just have Unicode, 
+and so before we do the send, 
+and before we receive, we have to encode, 
+and decode this stuff, 
+so that it works out and works out correctly. 
+So you can look at the documentation for both the encoder then decode. 
+Decode is a method in a bytes class, and it says, 
+"You can see that the encoding" We're telling it you can say, "It's not UTF-8". 
+Asking UTF-8 or in the same thing the default to UTF-8, 
+which is probably all you're ever going to use, 
+and the same thing is through strings can be encoded using UTF-8 into a byte array, 
+and then we send that byte array out to the outside world. 
+It sounds more complex than it is. 
+So, after all that, 
+think of it this way. 
+
+
+On the way out, we have an internal string before we send it. 
+We have to encode it, and then we send it. 
+Getting stuff back, we receive it. 
+It comes back as bytes, 
+we happen to know it's UTF-8 or we're letting it automatically detect UTF-8, 
+and decode it, and now we have a string. 
+Now, internally inside of Python, 
+we can write files, we can do all stuff in and out of this stuff. 
+In a solar works all together it's just that this is UTF-8 question mark, 
+question mark this is the outside world. 
+So, you have to look at your program and say okay, 
+"When am I talking to the outside world?" 
+Well, in this case, it's when I'm talking to a socket, right? 
+I'm talking to a socket, so, 
+I have to know enough to encode and decode as I go in and out of the socket. 
+So, it looks weird when you all started start seeing these n-codes and decodes, 
+but they actually make sense. 
+They're like this barrier between this outside world, 
+and our inside world. 
+So, that inside our data is all completely consistent, 
+and we can mix strings from various sources 
+without regard to the character set of those strings. 
+So, now we're going to do is, we're going to rewrite that program. 
+It's a short program, 
+but we're going to make it even shorter.
+apstone Completion Options
+We have designed this capstone with several pathways to accommodate learners with varying goals and time constraints.
+Certification
+If you intend to earn a certificate for this course, we have designed this course with only one required quiz (up next). Your certificate will be available immediately upon quiz completion.  
+You may choose to either finish quickly, or keep proceeding with optional and honors track assignments.
+Honors Track
+Even if you have already earned you official certificate, we have created an Honors Track for learners who would like a more discovery-oriented experience.  You can complete projects with our community of learners, and earn additional recognition on your certificate.   
+If you have purchased a certificate, it will automatically update to include a “With Honors” distinction if you proceed and finish honors assignments.
+See Coursera’s Honors assignments for additional information.
+Audit Learners
+Please note that only learners who have paid can submit assignments. If you are auditing this course, you will be able to access most content, but not submit your assignment for a grade. If you wish to have your assignments graded and receive a course certificate, we encourage you to purchase a subscription to this course. Coursera has provided information about purchasing a certificate, and you can also get help from the Coursera Help Center.
+
+Play video starting at ::13 and follow transcript0:13
+Hello, and welcome to yet another installment of our 
+Internet History Technology Security and Python for Everybody Office Hours. 
+We're here in the Hague in the Netherlands and 
+I'd you to meet some of your fellow students. 
+So here we go. 
+So say your name and say hi and if you have any message or whatever. 
+>> I'm Wakim and I'm interested in Python and a big fan of Dr. Charles.
+Play video starting at ::39 and follow transcript0:39
+>> Hi, my name is Weil. I just start learning Python, I'm so 
+excited to learn more and more about Python. 
+>> Hi, I'm Baadlein. I'm also excited about Python and thanks. 
+>> My name is Root. Dr. Chuck is the best. 
+>> [LAUGH] No, you're the best.
+Play video starting at :1: and follow transcript1:00
+>> Hello, I'm Eva, and I'm happy to meet Dr. Chuck. 
+>> Hi, I'm Chrisus and 
+I'm super happy to be here with Dr. Chuck. 
+>> Hi, I'm Jane, and Dr. Chuck helped me breeze through Python, so it's awesome. 
+>> Good.
+Play video starting at :1:15 and follow transcript1:15
+>> Hi I'm Martin, and I'm learning Python from Dr. Chuck and I love it too. 
+>> Hello my name is Victor. 
+I'm very excited to be here with Professor Chuck, and I really want to thank him and 
+Coursera because thanks to them I now am programming. 
+And I really like that programming stuff. 
+>> Okay, thank you. 
+>> I'm Catalina and I really, really, really love this course. 
+>> So let's give a quick round of applause for Catalina for setting this up and 
+arranging this. 
+[APPLAUSE] Okay. 
+Well, thank you. 
+>> No, thank you. >> That's the first time that someone on 
+Twitter has ever like tweeted me back and said I'll set that up for you. 
+>> [LAUGH] Yeah. >> So appreciate that. 
+>> Happy to do it. 
+>> Hello, I'm Giorgio and I follow some of the courses of Dr. 
+Chuck and you should do the same. 
+>> Hi, I'm Tim. I took some of the courses of Dr. 
+Chuck and finally I have the opportunity to meet him.
+Play video starting at :2:6 and follow transcript2:06
+>> Hi, I'm Stefan and I'm following the Python course from Dr. 
+Chuck and I'm loving to meet him and he's very nice. 
+Thank you.
+Play video starting at :2:14 and follow transcript2:14
+>> Hello, my name is Rob. 
+I'm following the Python course, and it's good to see Dr. Chuck again. 
+>> You have an interesting story about how Coursera affected your employment.
+Play video starting at :2:25 and follow transcript2:25
+>> Yes, I took a lot of courses on Coursera and edX, 
+and now finally I got a job. 
+>> Congratulations. They'll be happy to hear that.
+Play video starting at :2:35 and follow transcript2:35
+>> Hello my name is Araf and thank you for making this happen. 
+I see other peoples have the same interest basically. 
+I appreciate it, thank you. 
+>> You're welcome. >> Hi I'm Irina and 
+this course gave me a lot of self-confidence, so thank you.
+Play video starting at :2:54 and follow transcript2:54
+>> You're very welcome. 
+So, again, a very large. 
+Oops, there, I cover my own thing. 
+A very large group of folks. 
+It's been kind of chilly here. 
+It's the first day of spring here in Holland. 
+I even saw some tulips coming up, but we're all wearing gloves. 
+>> [LAUGH] >> because we were too big to fit inside. 
+And then we sat here for a whole hour, until we realized. 
+[LAUGH] 
+that there were heaters, and 
+we didn't turn the heaters on, so we're working on how to turn the heaters on. 
+So, the next place I think that I might see you is Estonia. 
+The next Coursera office hours will be in Estonia. 
+So, we'll see you there. 
+Cheers!
+[MUSIC]
+Play video starting at ::13 and follow transcript0:13
+>> The Khan Academy computer science platform is something that, it came 
+from discussions that I'd had with Saul Khan and other people at Khan Academy. 
+At that time, this was 2011, Khan Academy was much, much smaller. 
+We had conversations like well, 
+we would really like to have some computer science curriculum. 
+And they're like, John, are you interested in thinking about this? 
+And now, I've never explicitly taught computer science in any formal setting. 
+I mean, I've certainly taught people frameworks and libraries. 
+I've done lots of speaking on these particular things. 
+And I've written books on like JavaScript, and stuff like that. 
+But again, I haven't taught programming to 
+people who are complete beginners up through. 
+So it was a new challenge for me. 
+I had to go back and do a lot of rethinking about, 
+trying to remember what it was like when I was learning to program, and 
+talk about it with other people and 
+figure our what they experienced when they were learning to program. 
+What worked for them, what didn't work. 
+And during the initial period where it was just me kind of exploring concepts and 
+trying different things, the idea that really stuck with me 
+the most was actually going back to when I learned to program. 
+When I was, I was a teenager, maybe about 14 or 15 or so, 
+and a friend of mine came over to my house and he had a floppy disk and 
+on it was a copy of QBasic with a program or two. 
+And he's like, you should, you need to try this out. 
+Check this out. 
+And he loaded it up and he ran some program that he had written. 
+And it was just a very basic, may have just printed to something out, 
+I don't remember. 
+And I remember that was the first time that I realized, 
+I didn't realize that you could actually tell the computer what to do. 
+I wanted to try and sort of take that initial experience that I had personally, 
+and the sort of experience of being able to read and learn and try things in 
+an open environment like you would have in GitHub, and combine those together. 
+So, what ended up coming out of this was this what we called, 
+at Khan Academy, computer science, which is a bit of a, 
+I'd say, a misnomer in that is that it's not what most 
+people think of as a computer science curriculum. 
+We're not, 
+at least at this point, we're not going to replace a CS101 at a university. 
+And a lot of what we're doing is encouraging students 
+to do that exploration for themselves. 
+To be able to look at code, see programs that other students have written, 
+that we have written or whomever, and honestly, 
+I feel like the most important thing that we could do is be able 
+to create that little spark and create that excitement and 
+really get them excited about programming. 
+>> So when I joined we had, the computer programming was a playground and 
+it was great. 
+And people were creating, 
+there'd already been millions of programs created at that point, I think. 
+But there was not much of a curriculum around it. 
+And so it meant that I was worried that we might lose some people who weren't able to 
+figure it all out just by exploring, just by the tinkering. 
+Who did need to be explicitly said, this is how a for loop works, 
+this is what a variable is, now you try it. 
+So what I did was, when I started off I took my 
+JavaScript 101 curriculum that I'd been giving in traditional classroom settings, 
+somewhat traditional settings, and then Khanified that. 
+And that meant creating talk throughs, which are like videos, 
+except they're way cooler, because they're actually the editor on the left hand 
+side and the output on the right. 
+And you can actually pause, and it's the actual live editor, so you can then, you 
+know, make little changes, see how it happens, and then you can continue playing. 
+And then there's the coding challenges. 
+And the coding challenges are step by step, like okay, 
+we want you to do something like this, okay you're close but 
+you've actually made this common mistake, here's maybe what you should do instead. 
+And it's a way of both assessing and giving them a way to practice and 
+teach them a bit more. 
+So for every talk through there'll be a coding challenge. 
+And then every so often there'll be a project, which is a bigger free form 
+creative project, which gives them a lot of freedom for 
+what to do while still practicing what they've learned. 
+So maybe, they're making a fish tank once they've learned functions, 
+then they have this fish function and they have to parametrize that function so 
+that fishes can have different colors or sizes, right? 
+But they can go wild with that. They can add seaweed, they can have bubbles, 
+whatever they want to do. And sometimes they even make rat tanks, whatever. 
+And those get peer evaluated so it's coming up that curriculum and 
+then coming up with the more advanced curriculums as well. 
+>> I think one of the things that's important is I don't want to create 
+a generation of programmers or 
+computer scientists who exclusively program for the sake of programming. 
+Now I tend to be that and others here at the company tend to be that, but 
+I feel like we are the exception. 
+And another experience that was very formative to me is 
+I remember I was taking a AP Computer Science class in high school. 
+And I was, I had also been other AP classes with my other friends, 
+like AP English, AP History. 
+And they were smart, I knew they were the smartest people, and 
+they could go to any college they want. 
+And we got to AP Computer Science and I was just like, I can just do whatever. 
+I knew exactly how everything worked and they struggled. 
+And what was interesting for me to see that is 
+I realized that there's certain concepts here that are challenging. 
+And, but potentially, if they're taught in the right way, that these people, 
+who I know are really smart, they should not be struggling, 
+that they would be able to get it. 
+And so really, what the Khan Academy CS platform, if we had the ability to 
+find whatever that thing is, to get that person really excited about programming, 
+to make them want to keep it and learn it for themselves, but 
+maybe use it within the context of however else they're going to use it. 
+If they love science, if they love art, if they love music. 
+Whatever that thing is, being able to take programming and be able to 
+mix that together and really just use it as a life skill at that point. 
+I would love it if we had a generation of people who just, like, 
+realized that that was a thing that they could have, that they could learn, 
+that they could use, and not just become a programmer for a programmer's sake. 
+>> We want to get people programming pretty early. 
+I mean, we've seen that eight year olds are learning to program on our platform. 
+They may be particularly smart eight year olds, but 
+we think that actually eight year olds could be doing some form of programming. 
+Maybe it's Block Break programming, maybe it's HTML, but they could be doing 
+something that's kind of exercising that type of skill, that part of the brain. 
+And so I envision that ideally, let's say sixth grade, 
+maybe sixth grade is when you start learning to program. 
+So you learn the basics of some language like JavaScript. 
+And then you start making your own programs. 
+And then maybe you start making programs for projects in other classes. 
+And I've seen this with some of our students, is that they use it for 
+science fair, and they use it for their history assignment. 
+They use it to make a timeline. 
+So they start using programming to complement those other classes, 
+those other topics, because that's one of the big things about programming, 
+it can be very cross-disciplinary and really work together with other stuff. 
+And we don't necessarily want everyone to become a computer programmer. 
+We want everybody to have that as a skill in their toolbox. 
+And then the other thing is that as they keep going, as they're making programs, 
+we really want them to be working with other people in making programs. 
+Because that's one of the big things about software development that they don't even 
+teach you that much in college, is that it's a huge team effort, right? 
+And if you're really going to make a good piece of software you're going to have to 
+work with other people. 
+And it requires a certain amount of skills and 
+it's also a really fantastic experience to work with other people. 
+It's way more a collaboration than a competition. 
+And we don't do that much collaborating when we're being schooled. 
+We do more competing. 
+And so I would imagine, like maybe they get into high school, and 
+maybe they actually have a project where they work with a local non-profit and 
+they spec out and they do wire frame. 
+They learn about user experience. 
+And then they actually implement it as a team and they do code review. 
+And they learn about what it means to work on a team. 
+And then they do some usability testing, and then they actually deliver and 
+then they have it in their portfolio. 
+And so there it's not learning about programming and how computers work, 
+it's learning about how to work with people and learning about how to make things that 
+work well for people too, and getting an intuition for usability. 
+>> I don't feel like we've made much of an impact on let's say college 
+level computer science education. 
+However, I think we've definitely had an impact on the K through 12 level. 
+I would say pre-AP computer science teaching of programming. 
+Now it's interesting because I feel like we're very different 
+from most programming education. 
+If you look at programming education in that realm of before college or 
+before AP Computer Science, that your students are typically not writing code. 
+Or physically, I want to say physically typing out characters that are code. 
+You end up with environments like, for example, Scratch out of MIT. 
+And it's a bit, or like Mindstorms or these other things, and 
+I feel like we're one of the few environments where we're 
+getting young kids to actually type real-world code and 
+learn I think practical pragmatic code. 
+>> Getting to see classrooms use your stuff is incredibly valuable so 
+any time I talk to teachers I always come back with feature requests and 
+we came up with new teacher tools for that. 
+So teachers now have a much better dashboard to actually monitor the progress 
+of their students and see where they're at in the curriculum. 
+And they can actually see roughly who's at what spots in the curriculum so 
+they can kind of say, oh, these people should help each other or these people should 
+pair together, and they can see all the programs that people have created. 
+And it's very interesting because at this high school there's this teacher Ellen, 
+who's teaching using our platform, and then there's another teacher who's 
+teaching using traditional processing, which is the desktop Java version. 
+And when they do their assignments they have to zip them up in a file and 
+they have to email it to him and he has to go through them and read it that way. 
+And whereas Ellen just reloads the programs page and 
+can see exactly what her students are working on. 
+So it's kind of streamlined that part of it too. 
+
+
+# Building a Search Engine - Introduction
+This week we will download and run a simple version of the Google PageRank Algorithm. Here is an early paper by Larry Page and Sergy Brin, the founders of Google, that describes their early thoughts about the algorithm:
+http://infolab.stanford.edu/~backrub/google.html
+We will provide you with sample code and lectures that walk through the sample code:
+https://www.py4e.com/code3/pagerank.zip
+There is not a lot of new code to write - it is mostly looking at the code and making the code work. You will be able to spider some simple content that we provide and then play with the program to spider some other content. Part of the fun of this assignment is when things go wrong and you figure out how to solve a problem when the program wanders into some data that breaks its retrieval and parsing. So you will get used to starting over with a fresh database and running your web crawl.
+So, now we're going 
+to write a set of applications and the code there is the pagerank.zip. 
+That's simple webpage crawler and then a simple pet webpage indexer, 
+and then we're going to visualize the resulting network 
+using a visualization tool called d3.js. 
+So, in a search engine, 
+there are three basic things that we do. 
+First, we have a process that's usually done sort of when the computers are bored. 
+They crawl the web by retrieving a page, 
+pulling out all the links, having a list, 
+an input queue of links going through those links one at a time, 
+marking off the ones we've got, 
+picking the next one and on and on and on. 
+So, it says front end processes, spidering or crawling. 
+Then, once you have the data, 
+you do what's called index building where you try to look at the links 
+between the pages to get a sense of what are the most centrally located, 
+and what are the most respected pages where respect is defined as who points to whom. 
+Then, we actually look through and search it. 
+In this case we won't really search it, 
+we'll visualize the index when we're done. 
+So, a web crawler is a program that browses the web in some automated manner. 
+The idea is that Google and 
+other search engines including the one that you're going to run, 
+don't actually want the Web. 
+They want a copy of the web, 
+and then they can do data mining within their own copy of the web. 
+It's just so much more efficient than having to go out and look at the web, 
+you just copy it all. 
+So, the crawler just slowly but surely shores 
+crawls and and gets as good a copy of the web as it can. 
+Like I said, its goal is to retrieve a page, 
+pull out all the links, 
+add the links to the queue and then just pull the next one off, 
+and do it again, and again, 
+and again, and then save all the text of those pages into storage. 
+In our case, it'll be a database in Google's place. 
+It's literally thousands or hundreds of thousands of servers, 
+but for us we'll just do this in a database. 
+Now, web crawling is a bit of a science. 
+We're going to be really simple, 
+we're just going to try to get to the point we've crawled 
+every page that we can find in once. 
+That's what this application is going to do. 
+But in the real world, you have to pick and choose 
+how often which pages are more valuable. 
+So, in real search engines, 
+they tend to revisit pages more often if they consider those pages more valuable, 
+but they also don't want to revisit them too often because Google could 
+crush your website and make it so that your users can't use their website, 
+because Google is hitting you so hard. 
+There's also in the world of web crawling this file called robots.txt. 
+It's a simple website that tells that search engines, 
+when they see a domain or a URL for the first time, 
+they download this and it informs them where to look and where not to look. 
+So, you can take a look at py4e.com and look at the robots.txt, 
+and see what my website is telling 
+all the spiders where to go look and where the good stuff is at. 
+So, at some point you build this, 
+you have your own storage, 
+and it's time to build an index. 
+So, the idea is to figure out what pages are better than other pages and it certainly, 
+you start by looking at all the words in the pages. 
+Python word splits etc. 
+But the other thing we're going to do is look at the links between them 
+and use those links as a way to ascribe value. 
+So, here's the process that we're going to run. 
+There's going to be a couple of different things in the code 
+for all of this is sitting here in pagerank.zip. 
+The way it works is that actually only just spiders a single webpage, 
+you can spider dr-chuck.com, 
+or you can actually spider Wikipedia. 
+It's kind of interesting, 
+but it takes you a little longer before the link start to 
+sort of go back to one another on Wikipedia. 
+But Wikipedia is not a bad place to start if you want to run something long, 
+because at least Wikipedia doesn't get mad at you for using it too much. 
+So, there's always all these sort of data mining things. 
+This crawling have this thing where it grabs basically a list of the and. 
+So, we end up with a list of URLs. 
+Some of the URLs have data, some do not, 
+and it randomly looks for one of the unretrieved URLs. 
+Goes and grabs that URL, passes it, 
+and then puts the data in for 
+that URL but then also reads through to see if there's more links. 
+So, in this database, 
+there are a few pages that retrieved and lots of pages yet to retrieve. 
+Then it goes back says, oh, 
+let's randomly pick another unretrieved file. Go get that one. 
+Pull that in. Put the text for that one in, 
+but then look at all the links and add those links to our sorted list. 
+If you watch this, even if you do like 
+one or two documents at a time, you'll be like "Wow, 
+that was a lot of links" and then you grab another page and there's 20 links, 
+or 60 links, or 100 links. 
+So, you're not Google so you don't have the whole internet, 
+though what you find is as you touch any part of the internet, 
+the number of links explodes and you 
+end up with so many links that you haven't retrieved. 
+But, if you're Google after a year and you've seen it all once, 
+then you get your data more dense. 
+So,that why in this program we stay with one website. 
+So eventually, you get some of those links filled 
+in and have more than one set of pointers. 
+The other thing in here is we keep track 
+of which pages point to which pages, right, little arrows. 
+So these, each page then gets a number inside this database like a primary key, 
+and we can keep track of which pages and we're going to use 
+these inbound and outbound links to compute the Page Rank. 
+That is the more inbound links you have 
+from sites that have a good number of inbound links, 
+the better we like that site. So, that's a better site. 
+So, the Page Rank algorithm is a thing that 
+sort of reads through this data and then writes the data, 
+and it takes a number of times through all of 
+the data to get this Page Rank values to converge. 
+So, these are numbers that converge toward the goodness of and each page, 
+and so you can run this as many times as you want. 
+This runs really quickly, 
+this runs really slow because it's got to talk to the network and pull these things back, 
+talk to the network and that's why we can restart this. 
+The Page Rank is all just talking to data inside that database and it's super fast, 
+and then if you want to reset these to the initial value of the Page Rank algorithm, 
+you can reset that and that just sets them all to the initial value. 
+I think of one, they also won a goodness of 
+one and then some of these ended with goodnesses of five and 0.01, 
+and so the more you run this, 
+the more this data converges. 
+So, these data items tend to converge after a while. 
+The first few times they jump around a bunch, 
+and then later they jump around less and less. 
+Then, at any point in time as you run this this ranking application you 
+can pull the data out and dump it to look at the Page Rank values of, 
+for this particular page, 
+has a page rank value of one. 
+These are dumping out, 
+this one has probably just run the SP reset because they all have the same Page Rank. 
+After you've run it, you'll see when you're on spdump, 
+you will see that these numbers start to change. 
+This stuff is all in the read me file that's sitting here in the zip file, you undo that. 
+So, the spdump just reads the stuff and prints it out, 
+and then spjson also reads through all the stuff that's in 
+here and then takes the the best, 
+some 20 or so links with the best Page Rank and dumps them into a js JavaScript file. 
+Then there is some HTML and d3.js which is a visualization 
+that produces this pretty picture and 
+the bigger little dots are the ones with a better page rank, 
+and you can grab this and move all this stuff around and it's nice and fun and exciting. 
+So, we visualize, right? 
+So, again, we have a a multi-step process where it's 
+a slow restartable process than a sort of fast data analysis cleanup process, 
+and then a final output process that pulls stuff out of there. 
+So, it's another one of these multi-step data mining processes. 
+The last thing that we're going to talk about is visualizing mail data. 
+We're going to go from the Mbox-short to Mbox to Mbox-super gigantomatic. 
+That's what we're going to do next.
+[MUSIC] 
+Hello, and welcome to Python for everybody. 
+We're doing a bit of code walk-though and if you want to, you can get to the sample 
+code and download it also so that you can walk through the code yourself. 
+What we're walking through today is the page rank code. 
+And so, the page rank code, 
+let me get the picture of the page rank code up here. 
+Here's that picture of the page rank code. 
+And so, the page rank code has four chunks of code that are going to, 
+five chunks of code that are going to run. 
+The first one we're going to look at is the spidering code and 
+then we'll do a separate look at these other guys later. 
+So the first one we'll look at is spidering, and again it's sort of the same 
+pattern of we've got some stuff on the web, in this case webpages. 
+We’re going to have a database that sort of just captures the stuff. 
+It's not really trying to be particularly intelligent, but it 
+is going to parse these with BeautifulSoup and add things to the database, okay. 
+And so, then we'll talk about how we run the page rank algorithm, and 
+then how we visualize the page rank algorithm in a bit. 
+Now, the first thing to notice is that I put the BeautifulSoup 
+code in right here, okay? 
+So you can get this from the bs4.zip file. 
+There might even be a README, no, but there's a README somewhere. 
+But you got to get use BeautifulSoup, you gotta put this bs4 zip or 
+you have to install BeautifulSoup for your stub. 
+So I provide this bs4 zip as a quick and 
+dirty way if you can't install something for 
+all of the Python users on your system. 
+So that's what it's supposed to look like. 
+You're supposed to have it unzipped right here in these files. 
+And I don't know what damnit.py means. 
+That came from Beautiful Soup. 
+If you look, it's in their source code. 
+So I'm not swearing. 
+It's Beautiful Soup, people are swearing. 
+I'm sorry, I apologize, okay. 
+So the code we're going to play with the most is in this first one is 
+called spider.py. 
+And, we're going to do databases, we're going to read URLs and 
+we're going to parse them with Beautiful Soup, okay. 
+And so, what we're going to do is we're going to make a file. 
+Again, this will make spider.sqlite, and here we are in page rank, Ls minus l. 
+Spider.sqlite is not there, so this is going to create the database. 
+We do CREATE TABLE IF NOT EXISTS we're going to have an INTEGER PRIMARY KEY, 
+because we're going to do foreign keys here. 
+We're going to have a URL, and the URL which is unique.The HTML, 
+which is unique whether we got an error. 
+And then, for the second half, 
+when we start doing page rank we're going to have old rank and new rank. 
+because, the way page rank works is it takes the old rank, 
+computes the new rank and then replaces the new rank with the old rank and 
+then does it over and over again. 
+And then we're going to have a many to many table which points really back, 
+so I call this from IB and to IB. 
+We did this with some of the Twitter stuff. 
+And then this webs is just in case I have more than 
+one web does not really make much difference. 
+Okay, so what we're going to do is we're going to SELECT id, 
+url FROM Pages WHERE HTML is NULL, this is our indicator that a page has not yet 
+been retrieved and error is NULL ORDER BY RANDOM. 
+And so this is our way, this long bit of stuff. 
+And this not all of this SQL is completely standard, but 
+this order by random is really quite nice in sqlite. 
+Limit 1 says just randomly pick a record in this database 
+where this true, is true and then pick it randomly. 
+And then we're going to fetch a row and if that row is none right, 
+we're going to ask for a new web a starting URL and 
+this is going to fire things up and we're going to insert this new URL. 
+Otherwise, we’re going to restart. 
+We have a row to start with and otherwise were going to sort 
+primness by inserting the URL we start with and insert into it. 
+If you have enter it, 
+it just goes to drchuck.com which is a fine place to start. 
+And then what we do is what this does is its page 
+rank this webs table to limit the links. 
+It only does links to the sites that you tell it to do links and 
+probably the best for your page rank is to stick with one site. 
+Otherwise you'll just never find the same site again. 
+If you let this wander the web aimlessly, and so 
+I generally run with one web which web that should be try to called websites. 
+And I am pulling all the data, and I read this in and 
+I just make myself a list of the URL, the legit URLs and you'll see how we use that. 
+And the webs is, what are the legit places we're going to go because we're going to 
+go through a loop, ask for how many pages and we're going to look for a null page. 
+Again we're using that RANDOM ORDER BY RANDOM 
+limit one, and then we're going to grab one. 
+We’re going to get the fromid, which is the page we're linking from and 
+then the url, otherwise there's no one retrieved. 
+And so the fromid is when we start adding links to our page links, 
+we gotta know the page we started with. 
+And that's the primary key. 
+We'll see how that primary key is set in a second. 
+So, otherwise, we have none. 
+And we're going to print this, from id in the URL that we're working with. 
+Just to make sure, we're going to wipe out all of the links, 
+because it's unretrieved. 
+We’re going to wipe out from the links, 
+the links is the connection table that connects from pages back to pages. 
+And so we're going to wipe out. 
+So we're going to go grab this URL. 
+We're going to read it. 
+We're not decoding it because we're using BeautifulSoup 
+which compensates for the UTF-8 and so it we can ask. 
+This is the HTML error code and we checked 200 is a good error and 
+if we get a bad error, we're going to say this error on page. 
+We're going to set that error, we're going to update pages. 
+That way we don't retrieve it ever again. 
+We basically check to see if the content type is text/html. 
+Remember in http you get the content type. 
+We only want to retrieve it. 
+We only want to look for the links on HTML pages and so 
+we wipe that guy out if we get a JPEG or something like that. 
+We're not going to retrieve JPEG, and then we commit and continue. 
+So these are kind of like, those are pages that we didn't want to mess with. 
+And then we print out how many characters we got and parse it. 
+We do this whole thing in a try accept block because a lot of things can go 
+wrong here. 
+It's a bit of a long try accept block. 
+KeyboardInterrupt, that's what happens when I hit control + c at my keyboard or 
+control + z on windows. 
+Some other exception probably means BeautifulSoup blew up or 
+something else blew up. 
+We indicate with the error=-1 for that URL so we don't retrieve it again. 
+At this point, at line 103, we have got the HTML for that URL. 
+And so we're going to insert it in, and we're going to set the page rank to 1. 
+So the way page rank works is it gives all the pages some normal 
+value then it alters that. 
+We'll, see that in a bit. 
+So it sets it in with one. 
+We're going to insert or ignore. 
+That's just in case this pages are already that the pages is not there. 
+And then we're going to do an update, and that's kind of do the same thing twice, 
+just sort of doubling making sure if it's already there. 
+Insert or ignore will cause us to do nothing, and 
+the update will cause us to retain it and then commit it so, 
+that if we do select later we get that information. 
+Now this code is similar. 
+Remember, we used BeautifulSoup to pull out all of the anchor tags. 
+We have a for loop. 
+We pull out the href. 
+And you'll see this code's a little [LAUGH] more complex than some of 
+the earlier stuff. 
+Because it has to deal with the real nastiness or Imperfection to weg. 
+And so, we're going to use urlparse which is actually part of 
+the URL lib code, and that's going to break the URL into pieces. 
+Come back, use urlparse. 
+We have the scheme which is HTTP or HTTPS. 
+If it's a [INAUDIBLE] relative references. 
+This is all relative references by taking the current URL and hooking it up. 
+Urljoin knows about slashes and all those other things. 
+We check to see if there's an anchor, the pound sign at the end of a URL, 
+and we throw everything past, including the anchor away. 
+If we have a JPEG, or a PNG, or a GIF, we're going to skip it. 
+We don't want to bother with that. 
+These we're looking through links now, we're looking at all the links. 
+And if we have a slash at the end, we're going to chop off the slash, by saying -1. 
+And so this is just kind of nasty choppage and throwing away the URLs, 
+that we're going through a page, and we have a bunch that we don't like, or 
+we have to clean them up or whatever. 
+And now, and we've made them absolute, by doing this. 
+It's an absolute URL. 
+You write this slowly but surely, when your code blows up, and 
+you start it over and start it over and start it over. 
+Then what we do is we check to see through all the webs. 
+Remember, those are the URLs that we're willing to stay with and usually, 
+it's just one. 
+If this would link off the sites we're interested in, we're going to skip it. 
+We are not interested in links that leave the site. 
+So this is like link that left the site, skip it. 
+But now, we finally, here at line 132, we're ready to put this into Pages, 
+URL and the HTML, and it's all good, right? 
+And, Where's that one's going to be null right there, 
+because we haven't retrieved the HTML. 
+This is NULL because this is a page we're going to retrieve. 
+We're giving the page rank of one and we're giving it no HTML and 
+that way it'll be retrieved and then we commit that okay? 
+And then, we want to get the id so 
+we could have done this with one way or another. 
+But, we're going to do a SELECT to say hey, 
+what was the id that either was already there or was just created. 
+And we grab that with a fetchone and say retrieve to id and 
+now we're going to put a link in INSERT OR IGNORE INTO Links. 
+From id to id which is the id, the primary key of the page that we're going 
+through and looking for lengths toid is the length that we just created. 
+And away we run. 
+So, it's going to go and go and go and go. 
+Let's go look at the create statement up here. 
+From_id and to_id right there, 
+okay, so, so let's run it. 
+Python3 spider.python so it's fresh and 
+so it wants a URL with which to start and 
+I'll just start with my favorite 
+website, www.dr-chuck.com. 
+Now this basically this first one you put in, 
+it's going to stay on this website for awhile, okay? 
+So I'll hit Enter, and let's just grab like, let's grab one page just for yaks. 
+Okay, so grab that and print it out 
+that it got 8545 characters and 
+it printed out that it got. 
+Six links, so if I go to this and 
+Open Database and I go to code three and 
+I got to page rank and I look at this. 
+Let me get out so it closes. 
+So, notice this sqlite journal. 
+That means it's not done closing, 
+so I'm going to get out of this by pressing enter. 
+And so you'll notice now that that journal file went away. 
+Otherwise, we would not be getting the final data. 
+There we go, okay. 
+So webs, let's take a look at the data. 
+Webs has just one URL, that's the URLs that we're allowing ourselves to look at. 
+You can put more than one in here if you want, but 
+most people just leave this as one. 
+Pages, so we got this first one and we retrieved this and this is the HTML of it. 
+And we found six other URLs in there that are dr-chuck.com URLs, right? 
+There was lots of other URLs in there, but 
+there are only five other ones that we found, okay? 
+And so, and what we'll find is that if we go to Links, we'll see that page one 
+links to two, links to three, links to four, links to five, links to six. 
+because the Links is just a many to many table. 
+So page one points to page two, page one points to page two, page one to three, 
+page one to five. 
+Okay, so that's what happens when we have the first page. 
+So let's retrieve one more page.
+Play video starting at :13:56 and follow transcript13:56
+Now, we could have started a new crawl, but 
+it's just going to stay on dr-chuck.com, and I'll just ask for 1 more page. 
+And so now it went and grabbed. 
+It randomly picked among these null guys, and I'm going to hit enter to close it. 
+And then I'll refresh this and so, it looks like we retrieved OBI sample and 
+we didn't get any new links, and so the links page. 
+No, we didn't get any new links, so that page whatever that page was OBI sample had 
+no external links so let's do another one.
+Play video starting at :14:35 and follow transcript14:35
+One more page. 
+So that one had 15 links so let's take a look now. 
+So now, we have 15 pages, it picked this one to do right? 
+And now it added 15 more pages. 
+And then if you look at Links, you will see that page four, 
+which is one it just retrieved, links back to page one. 
+So now we're seeing, this is where the page rank is going to be cool. 
+Four links to one, four links is whatever, away we go, right? 
+One goes to four, four goes to one. 
+I should have probably put a uniqueness constraint on that. 
+It's not supposed to have duplicated that. 
+Okay, so let's run this a bunch of times now. 
+So let's just run it 100 times, for 100 pages.
+Play video starting at :15:27 and follow transcript15:27
+It'll take a minute. 
+So, you'll see it's like freaking out on certain pages, not parsing them. 
+You know, it's found it's way into my blog. 
+It's finding like 27 links. 
+This table is growing wildly at this point. 
+It’s going to take us a while before we get to 100, it's kind of slow. 
+Now the interesting thing is, 
+I can hit control C at any point and time [SOUND], right? 
+And so that blew up. 
+But it's okay because the data is still there. 
+And, so if you go back to pages for example, and we refresh our data, 
+we see we got a ton of stuff. 
+And this will restart and all the things. 
+So if we search this that I started that by HTML you see that there's lots of files 
+that we've got. 
+And is never going to retrieve that again because those have HTML. 
+So then I can run this thing again and start it up. 
+And when I say Ctrl+C, your computer might go down, your network might down. 
+There is all kinds of all kinds of things might happen and 
+you just pick up where it leaves of. 
+It just picks up where it leaves of and that's what's nice about this. 
+Okay, so that's pretty much how this works. 
+We've got this part running. 
+We're seeing it flow into spider.sqlite. 
+We're seeing that we can start this and replace this. 
+And so what I'll do is I will come back in the next video and show you 
+how all these things work together, and then how we actually do the page rank. 
+So, thanks again for listening and see you in the next video. 
+[MUSIC]
+[MUSIC] 
+Hello and welcome to Python for Everybody. 
+We're doing some sample code. 
+You can get a hold of the sample code zip if you want to follow along. 
+And so we're picking up in the middle here where we are running a simple 
+spider that's retrieving data, and putting it into running this spider.py file. 
+And it's cruising around, and doing things, and the beauty of any of these 
+spider processes is I can stop anytime, and just hit Ctrl+C. 
+And so we take a look at the spider SQLite file, and retrieve it. 
+And it looks like we've got 302 pages, I don't know how many we got retrieved. 
+70, okay there we go.
+Play video starting at ::54 and follow transcript0:54
+Got about 100, wait, I'm looking for the wrong thing. 
+Null, null, null, null, null, null, yeah, 
+we got about 107 pages. 
+So what we are going to do now with 107 pages is we are going 
+to run the PageRank algorithm, okay? 
+Let's take a look at that code. 
+So the idea of page rank, We're going to run this PageRank algorithm. 
+The spreset just resets the page rank and 
+sprank runs as many iterations of page rank. 
+So the basic idea is that if you were to look at the links here. 
+We think of page one pointing to page two gives some of page one's love to page two. 
+Page four has some value that it gives to page one. 
+Go on and page 2 gives love to page 46 over and over and over again. 
+But the problem is is that how good is page one and 
+how much positive karma does it give to page two? 
+And so what happens is we start by giving every page a rank of one. 
+We say everybody starts out equal. 
+But then what we do is we divide up, in one iteration of the PageRank algorithm. 
+We divide up the goodness of a page across its outbound links and 
+then accumulate that. 
+And that becomes the next rank, okay? 
+And so, let's take a look at the code for the PageRank algorithm.
+Play video starting at :2:35 and follow transcript2:35
+So this is pretty simple. 
+It only imports SQLite 3 because it's really doing everything in 
+the database, right? 
+It's going to be updating these columns right here in the database.
+Play video starting at :2:45 and follow transcript2:45
+And so we're going to do some things here to speed this up. 
+If you're thinking of Google, this rank runs slowly and 
+it's going to run continuously to keep updating these things. 
+So the first thing I do is I read in all of the from_ids from the links, 
+SELECT DISTINCT throws out any duplicates.
+Play video starting at :3:9 and follow transcript3:09
+And so I have all the from IDs 
+which are all the pages that have links to other pages. 
+because all the pages are in pages but in links to have a from ID, 
+you have to also have a to ID. 
+Okay, and so we're also going to look at the pages that receive page rank. 
+And we're kind of pre-caching this stuff, okay? 
+So we're going to do a SELECT DISTINCT of from_id and to_id. 
+And loop through that group of things. 
+And we're making a links list here. 
+And so we're saying if the from_id is the same as the to_id, we're not interested. 
+If the from_id is not already in my from_ids that I've got, 
+I'm going to skip it. 
+If the to_id is not in the from_id, 
+meaning that we don't want links that point off to nowhere. 
+Or point to pages that we haven't retrieved yet. 
+And that's what this is saying, so 
+it's a filter on the from_ids and the to_ids from the links table. 
+So that it only are the links that point to another page we've already retrieved. 
+And then we're going to keep track of the entire superset of to_ids, 
+the destination IDs. 
+And I'm just putting these all in lists so that I don't have to hit the database so 
+hard, okay? 
+So this is getting what's called the strongly connected component. 
+Meaning that any of these IDs, 
+there is a path from every ID to every other ID eventually. 
+So that's called the strongly connected component in graph theory. 
+Then what we're going to do is we're 
+going to select new_rank from Pages for 
+all the from_ids, right? 
+And so we're going to have a dictionary that's based on the id, 
+the primary key, that's what node is, equals the rank. 
+And so if we look at our database, that means that for 
+the part of the strongly connected component in links. 
+We're going to grab this number and stick it into a dictionary 
+based on the primary key, this number right here. 
+So we're going to have a dictionary that's this mapped to that. 
+Again, we want to do this as fast as possible. 
+Now, we're only doing one iteration at the beginning. 
+So it asks, how many times you want to run it, okay? 
+And, so we just make an integer of that. 
+We check to see if there's any values in there. 
+If there are no values, we are bad. 
+And now we're going to go I equals 1 to range(many). 
+This is going to be one to one, so it might run however many times. 
+And then what it's going to do is it's going to compute the new page ranks. 
+And so what it's really going to do is it's going to take the page rank, 
+the previous ranks, and loop through them, and,
+Play video starting at :6:9 and follow transcript6:09
+The previous ranks is the mapping of primary key to old page rank, okay?
+Play video starting at :6:17 and follow transcript6:17
+And for each node we're going to have total = total + old_rank. 
+And then we're going to set the next_ranks to be 0, okay?
+Play video starting at :6:30 and follow transcript6:30
+And then what we're going to do is figure out the number of outbound links for 
+each page rank item. 
+So node and old_rank in the list of the previous ranks.
+Play video starting at :6:40 and follow transcript6:40
+These are the IDs we're going to give it to. 
+And so for this particular node, we're going to have the outbound links. 
+And we're going to go through the links and not link to itself. 
+Although we made sure that doesn't happen. 
+We make sure that this but then we're going to make a list called 
+give_ids which are the ids that node is going to share its goodness. 
+And now what we're going to do is we're going to say how much goodness are we 
+going to flow outbound. 
+Based on our previous rank of this particular node and 
+the number of outbound links we have. 
+So that's how much we're going to give in our outbound links. 
+And then what we're doing is all the IDs we're giving it to, 
+we started with the next_ranks being 0 for these folks. 
+These are the receiving end and 
+we're going to add the amount of page rank to each one. 
+So whatever this is, so we'll go through all of the links, 
+give out fractional bits of our current goodness. 
+And it's accumulated in each one and so 
+eventually all the incoming links will have been granted each new link value. 
+Okay, now, I'm just going to run through and calculate the new total.
+Play video starting at :8:1 and follow transcript8:01
+And this evaporation, the idea is is that it 
+has to do with the PageRank algorithm. 
+That there are dysfunctional shapes in which PageRank can be trapped. 
+And this evaporation is taking a fraction away from everyone and 
+giving it back to everybody else. 
+And so we add this evaporative factor. 
+And then we're going to do some computations just to show some stuff. 
+And that is we're calculating the average difference between the page ranks. 
+And you'll see this when I start running it. 
+And that is telling us this is going to tell us the stability of the page rank. 
+So from one iteration to the next, the more it changes, the least stable it is. 
+And you'll see in a sec that these things stabilize. 
+And we say, what's the average difference in the page ranks per node? 
+Which is what this is. 
+And that's what we're going to print, and now we're going to take the new_ranks and 
+make them the old_ranks, and then run loop again. 
+So I'm not actually updating the database each time through the page rank iteration. 
+But then at the very end I am going to do the update for 
+all of these things and update all of the rankings with the new ranks. 
+So I'm doing an in memory calculation so that this loop here runs screamingly fast. 
+Even if I want to do this loop 100 times or 1000 times, 
+it's really all just in memory data structures.
+Play video starting at :9:36 and follow transcript9:36
+Okay, so it's probably easier just for 
+me to show you this, the code runs quite simply. 
+Python3 
+sprank.py. 
+And so I'm only going to run it for one iteration and 
+that means that its loop here is just going to run one time. 
+And so it's going to start with the page ranks.
+Play video starting at :10:8 and follow transcript10:08
+The new rank of 1, and it's going to just run 1 iteration and 
+put the rank there, okay? 
+And then update this as well. 
+So let's go ahead and run that once for one iteration.
+Play video starting at :10:20 and follow transcript10:20
+Okay, and so it ran one iteration, and 
+the average change between the previous rank and the new rank is one. 
+So there it's actually quite crazy so I'm going to refresh here. 
+And you'll see that the old rank was one. 
+And the new rank is way down, way down, way down, way down, 
+down a little bit down, down some, up a whole bunch, down, down, up. 
+So you see that they went down and up. 
+Now the sum of all of these numbers is going to be the same, right, 
+because all it did was float it out and re-calculated it.
+Play video starting at :10:59 and follow transcript10:59
+And so that's what happens with page rank. 
+And so what'll happen is if I run one more page rank iteration. 
+These numbers will be used to compute the new rank and 
+this will be calculated to the old rank. 
+And so you'll see that they will change again so I'll just run it one more time.
+Play video starting at :11:20 and follow transcript11:20
+So I'm going to run one iteration. 
+And then I'm going to hit Refresh. 
+So you see all these numbers got copied over. 
+But now there's a new rank that's computed based on these guys. 
+And so this one went up. 
+This was 0.13, that's gone up a little bit. 
+This one's gone up some more. 
+This one's gone up. 
+This one went down, all right? 
+So this one went down from 6 to 8. 
+And you can see that the difference is now the average difference between this 
+number and this number across all of them went from 1 point something to 0.41. 
+And you'll see that with these very few pages, 
+the page rank converges really quickly.
+Play video starting at :12:2 and follow transcript12:02
+So let's run it again. 
+And I'll just run ten and you'll watch how this converges.
+Play video starting at :12:8 and follow transcript12:08
+So there you go. 
+It converges.
+Play video starting at :12:11 and follow transcript12:11
+And you're seeing now after 12 iterations that the difference between the old rank 
+and the new rank, Well, that's because it's that old rank. 
+I'll run one more iteration so that you can see.
+Play video starting at :12:26 and follow transcript12:26
+So this old rank is less than 0.005. 
+So now you can see that these numbers are sort of stabilizing. 
+This is the average, 
+that 005 number is the average difference between these two things. 
+Now, if we're going to pretend to be Google for a moment. 
+We can say python3 spider.py.
+Play video starting at :12:51 and follow transcript12:51
+So let's just do ten more pages. 
+Now what's going to happen here is these new pages are going to have page 
+ranks of 1, okay?
+Play video starting at :13:1 and follow transcript13:01
+So let's get out. 
+So if I do a refresh now and I look at new rank.
+Play video starting at :13:8 and follow transcript13:08
+So there's these guys that have high rank. 
+What you'll see, I hope, okay, so you see new pages, right? 
+These are the new ones that we just retrieved. 
+I don't know if they're linked or not and they all got one so 
+some old pages are way up 14. 
+Some pages if we go downwards, are way down, right, so these are useless pages. 
+They point to somewhere but nobody points to them. 
+That's what happens with these page ranks, okay? 
+So what happens is the new records get this 0.1. 
+And so if I run the ranking code again and I run, let's just run five iterations. 
+You'll see that the average delta goes up just briefly as it sort of 
+assimilates these new pages. 
+And then it goes right back down again. 
+And so that's what's happening with Google. 
+It's sort of running the spider to get more pages. 
+Then running the page rank which gets disturbed a little bit but 
+then it reconverges very rapidly. 
+And of course they've got billions of pages and we've got hundreds of pages, 
+but, you get the idea.
+Play video starting at :14:7 and follow transcript14:07
+Okay, and so I can run page rank 100 times. 
+And after a while, it just sort of hardly is changing. 
+So that's 2.7 to the negative tenth power. 
+So now let me run it one more time to update the stuff. 
+And if I refresh this, you're going to see. 
+Look at how stable these numbers are, 14.943591567, 
+the difference is there in the seventh one. 
+So that's why this whole page rank is really cool. 
+It seems like it's really chaotic when it first starts out and away you go, okay? 
+So that was just this, sprank, right? 
+sprank and spreset, we can look at that code I won't bother running it. 
+It just sets the old_rank to 1, that's it, that's as much code as you've got. 
+It just starts it and lets it rerun. 
+So I'm going to stop now. 
+And I'm going to start a new video where I just talk about this phase here, 
+where we're actually going to visualize the page-ranked data. 
+[MUSIC]
+[MUSIC] 
+Hello, and welcome to Python for Everybody. 
+We're doing some code walk-throughs. 
+If you want to follow along we've got a sample code zip that you can download and 
+take a look at all the code. 
+And while we are in the middle of is we're in the middle of the page rank code and 
+we just got done running the page rank. 
+And so we have spidered the code, we've ran page rank a bunch of times, 
+SP reset allows us to restart the page rank algorithm if we want but 
+we're not going to play with that. 
+We're just going to play with SPdump and SPjson and do the visualization. 
+Which is the fun part. 
+So I'll go in to spdump. 
+So this is simple code. 
+because it's really just running a SQL query and then turning stuff out, right? 
+So it connect to our database, create a cursor and then just do a select count and 
+we're going to just show the number of links. 
+We're going to order by the number of inbound links descending. 
+So we see the most linked things and we'll see the top fifty of that. 
+So it's just a sample. 
+You'll tend to write little helpers like this 
+that make your life easier just to show you the kinds of things that you want. 
+Spdump.py. 
+Like you just kind of test to make, this looks right to me. 
+And so, here is the number of inbound links. 
+That's my blog that has the most inbound links followed by 
+my uncategorized whatever that is. 
+And these are the number impound links within my own blog somehow, I don't know. 
+Because, this is not looking at the whole Internet at all. 
+So, there we go. 
+So, that's SP dump, pretty straight forward. 
+And now, we're going to go through the visualization process. 
+And so this is going to look at all that data and produce a JavaScript file. 
+It's going to write a JavaScript file, 
+that will then be fed into my visualization, using D3.
+Play video starting at :2: and follow transcript2:00
+And spJSON is going to do a big, long join. 
+It joins the links with the thing, where HTML is not null, or error is not null. 
+In order by the number of inbound links. 
+So, we're looking at the things that have the highest number of inbound links. 
+We're going to read all this stuff. 
+We're going to read through all those rows. 
+And pull out the page rank for each one. 
+We are looking for the highest and 
+lowest rank because these numbers can vary quite widely. 
+They go all the way from you know 0.000 to 20 or 30. 
+And so we, it asked how many do you want to do? 
+So it only does the top, like 20 or something and 
+you'll see why we need that in the visualization.
+Play video starting at :2:53 and follow transcript2:53
+And so this is just checking. 
+And so we're going to write out a file, we'll see what the format of this is, 
+it's just a JavaScript file and 
+we're going to write out, we're basically normalizing the rank. 
+We're subtracting the minimum rank and because we're going to 
+turn this into line weight the thickness of the line and so we're dividing by the, 
+we're normalizing the rank to be the thickness of the line and 
+the size of the ball, you'll see all of this in. 
+And so this is really just writing some JavaScript with little strings and 
+stuff like that. 
+
+then we're going to write all the links out. 
+So these are the balls that you'll see and this is showing what this is drawing 
+all the lines and this is again normalizing things for thickness. 
+And printing these things out, 
+now I don't want to go through this in tremendous detail. 
+But so I'll do python spjson.py. 
+Let's do the top 20 nodes. 
+And if I take a look at this file spider.js, you 
+can see that it's some objects that basically put the page rank in, 
+which ID it is, and that's a way for me to build a link back and forth. 
+Weight is how big the little circle is and then I have the links. 
+And I only asked for the top 20, right? 
+And then this is the thickness of the line, 
+where the line starts, where the line ends, okay? 
+So this is red. 
+By this HTML file. 
+And it's going to read somewhere this 
+force JS file and my own spider.js code. 
+This is some JavaScript I mean the force.js is the visualization code, 
+and this is d3, the visualization library. 
+So I'm using this d3.js, which is a really great visualization library. 
+And this is just drawing the circles and making the circles colors, 
+and making the circles bigger and smaller. 
+And then connecting all the lines in between it, so this is just there. 
+This data feeds that thing. 
+And so when we're all done, you simply say, open. 
+You don't have to do anything, open force.html.
+Play video starting at :5:21 and follow transcript5:21
+And so this, all of this beautiful JavaScript stuff is like, 
+wow that's really cool because you can move these things around. 
+You can see the circles are bigger if you hover it for 
+a while it shows you the big ones. 
+You know you can see these things and it's kind of cool. 
+So I gave you all of this force.js and force.html and so that kind of 
+visualizes the page rank and you could use this to visualize quite a bit of stuff. 
+It'll take you a while to pull down enough data from a real 
+web site, but after you've pulled down 400-500 pages if you have some time and 
+then the visualization is quite interesting. 
+But you can see why we had to pull down 
+several hundred pages just to get this much page rank information.
+Play video starting at :6:10 and follow transcript6:10
+Okay, so that gives you a sense of how to run 
+the page rank code in Python for everybody. 
+So thanks for listening. 
+[MUSIC]
+Hello, everybody. 
+This is Chuck. 
+We're here in Detroit Michigan on Woodward and 
+I'd like to introduce to you to some of your fellow students, so here we go. 
+Hi, say your name and say something for the class. 
+>> Hi, my name is Enola Seegers and I'm a student with the Focus Hope STEM Bridge 
+program over in Detroit Michigan on Oakman Boulevard. 
+Thank you for the opportunity to meet with you. 
+>> You should have mentioned that earlier we could have talked about STEM 
+the whole time. 
+Hi, I'm Kieran Matheson. 
+I'm an old geek.
+Play video starting at ::24 and follow transcript0:24
+>> And you're also a college professor. 
+>> That's right. A college professor at Oakland University 
+where I teach programming and stuff like that. 
+>> Go Golden Bears. 
+>> Golden Grizzlies. 
+>> Golden Bears, Grizzlies. 
+>> Hi, I'm Sarep. 
+This is my second online class and I would like to know more about programming. 
+>> Cool. 
+>> Hi, I'm Gordon this is my first Coursera course enjoying it with Dr. Chuck. 
+Thank you. 
+>> Thank you. 
+Hi, my name is Ali. 
+I took Dr. Chuck's course two years ago. 
+It was so far one of the best courses I've ever had. 
+>> It's the best course I've ever taught, so. 
+>> Hi, I'm Jen. 
+I'm just learning more about programming.
+Play video starting at ::57 and follow transcript0:57
+>> Hi, I'm Kevin Roller. 
+I'm representing ITT Tech. 
+And I'm learning Python to sharpen my programming skills. 
+>> Cool. 
+>> Hi, I'm Marie, and I'm exploring Python. 
+>> You just happened to be on a really long bicycle ride that happens to be 
+passing through right here, right? 
+>> Oh, yeah. That was from California to here. 
+And then from Arizona to Chile. 
+>> Yeah. 
+>> About 9000 miles. 
+>> So, you're just passing through? 
+>> Just passing though again. 
+>> We're all on a bicycle ride of one form or another, right? 
+So there we go, I think next office hours will be next week in Boston.
+Play video starting at :1:31 and follow transcript1:31
+Second time that I've done office hours in Boston, so see you soon.
+
+You know, I've been working in the general area of pattern recognition, 
+image processing, computer vision for the last 40 years. 
+And it just sort of happened, the serendipity, that in 1990 
+somebody called me from Washington, D.C. and said, you know, 
+you do good image processing work, and the NSA has designed or funded 
+the development of FPGA processor. 
+And we can give you this FPGA processing board, which is attached to a Sun, 
+at that time, 350 workstation, and we can give you some money. 
+Can you find some civilian application of this, okay? 
+So we thought about, as you know, FPGAs, field programable gate arrays, 
+can be reconfigured to do both low-level operations and high-level operations. 
+So in thinking in terms of the image processing domain we said, 
+what it is that we can do? 
+So low-level operations is easy, convolution. 
+We look at the pixel, look at its neighboring pixels, and you can do 
+either smoothing or edge detection and that's some kind of a local filtering operation. 
+For the high level, what could we do? 
+Well, point matching is a generic 
+computer vision operation. If we do stereo correspondence 
+you have left image, right image, and pick some landmarks in the two images and 
+align them and then estimate the depth. 
+So we said, well, what would be an application of this? 
+And this is where we just thought of, well, fingerprint. 
+Because fingerprint matching is essentially a point-matching operation. 
+If you watch any crime show on the TV these days, CSI or 
+anything, they will show you a computer extracting the 
+minutia points from a fingerprint and doing the matching. 
+So it's really fingerprint matching is essentially a point matching. 
+And then the local operation filtering operation means images, fingerprint images, 
+when they're captured are generally of low quality, a little bit blurred, and so on. 
+So we need to do some enhancement image enhancement of that. 
+So that's how we really got started 25 years ago in fingerprint recognition. 
+And I think now we have developed several technologies in fingerprint 
+which has made some impact. And I think one of 
+the best things which we have done is called texture-based 
+fingerprint matching. 
+Traditionally, fingerprint matching is based on points. 
+But what happens if the fingerprint image does not have sufficient number of 
+points, or 
+the image quality is poor, that we can not extract a sufficient number of points? 
+That's when you need to look at the texture, 
+image texture formed by the ridges and valleys' 
+which characterize a fingerprint. 
+So one of my PhD students, Salil Prabhakar, around 1999, 2000, came up with a bank of 
+filters which will capture the texture characteristics of the fingerprint 
+and that can be used for fingerprint matching. And surprisingly, 
+not necessarily surprisingly but to our delight, 
+this texture matching is what is used in the small sensors, embedded 
+fingerprint sensors, embedded in mobile phones.
+Play video starting at :3:41 and follow transcript3:41
+In order to have a small footprint of the fingerprint sensor 
+which are embedded in mobile phone, and to reduce the cost, 
+these sensors or fingerprint readers are about 80 pixels by 80 pixels.
+Play video starting at :3:56 and follow transcript3:56
+Traditionally, fingerprint sensors are 512 by 512, images of that size. 
+So an 80 by 80 image captures only a small part of the fingerprint, 
+not the whole fingerprint. 
+And so if you capture only a small part of the fingerprint the number of minutiae 
+points in it is maybe only four or five, and that's not enough to 
+establish a correspondence between two different fingerprint impressions. 
+So this is where the extra information is used. 
+So I think some of the work we did 25 years ago, 15 years ago or so, 
+in terms of texture matching is now seeing some renewed interest. 
+>> So, look forward. 
+What's got you curious now? 
+>> Well there's a number of interesting things we are doing. 
+So for example, the traditional model of authentication or security for 
+mobile space or any login that you do is log in once and then use it forever.
+Play video starting at :4:59 and follow transcript4:59
+But that was sort of revolved around the desktop computers. 
+Now if you have a mobile phone, 
+it's easily accessible by other people. 
+So this notion of authenticate once and use forever 
+is really not appropriate for higher levels of security. 
+So that's why we have this nuisance built into the system where you unlock the phone 
+and after five minutes of not using it, you have to keep unlocking again and again. 
+And a typical person may unlock a phone 40 or 50 times a day. 
+Now you are spending more time with the phone these days than with any 
+other device. 
+So why doesn't the device learn who you are based on your behavioral patterns, 
+based on how you swipe the screen, based on how you hold it, GPS. 
+And even the camera can turn on once in a while to capture 
+your partial face image, and it knows, yeah, this is the owner of the phone. 
+So this mode of operation is called continuous authentication. 
+So in the morning, you can present your frontal face image 
+to the camera to get a strong authentication, 
+or you can use a fingerprint, and then the rest of the day,
+Play video starting at :6:24 and follow transcript6:24
+unless the system is really unsure that it's not the owner, 
+the system can just sort of keep it unlocked for you. 
+As long as it is, 
+it has a sufficient confidence that it's the owner of the phone. 
+So, that's one area which is quite attractive.
+Play video starting at :6:42 and follow transcript6:42
+The other area, which is a very interesting. 
+And this applies to any biometric modality, whether it is fingerprint, face, or iris. 
+These are the three most widely used
+Play video starting at :6:55 and follow transcript6:55
+body characteristics which are used for identification.
+Play video starting at :6:59 and follow transcript6:59
+Is what is the persistence of these biometric traits, 
+and what is the uniqueness of the biometric trait. 
+So if I have a ten-digit key or ten-digit PIN, 
+I know how many distinct identities I can have. Ten to the power of ten.
+Play video starting at :7:20 and follow transcript7:20
+But can we say the same thing what can we say about fingerprints? 
+How many unique identities can it discriminate? 
+In principle, every finger has 
+a different pattern on it. 
+So there are approximately 7 billion people living on the earth right now. 
+So assuming each one has 10 fingers, there are 70 billion fingers. 
+So in principle, we should be able to discriminate
+Play video starting at :7:55 and follow transcript7:55
+70 billion individuals using this. 
+But it doesn't work quite this way 
+because what is on the finger is maybe quite different from the impression 
+of the finger which you use, of the image which you obtain to do the recognition. 
+And this question of what is the individuality or 
+what is the uniqueness of fingerprint or any other modality is not known. 
+And this is something which we would like to, which we are working on. 
+How do we establish the probability
+Play video starting at :8:31 and follow transcript8:31
+with which we can say that these two fingerprints are distinct? 
+Or the probability that your fingerprint will match one of my fingerprints? 
+That is referred to as probability of false correspondence. 
+And this notion is very important in the legal proceedings, especially when 
+a person is convicted based on partial fingerprint found at the crime scene. 
+And there have been a lot of innocent individuals who have been incarcerated 
+because of the wrong testimony or wrong conclusions. 
+So basically we need to have some scientific basis for 
+understanding what is the probability of false correspondence. 
+The second thing, 
+the second fundamental premise of any biometric trait, is the persistence. 
+That is, does the fingerprint pattern change over time? 
+Does the iris pattern change over time? 
+We know that the people age so the face characteristics changes over time and 
+it is indeed too that state of the art face recognition systems 
+start falling apart when the age separation between 
+two images of the same person exceeds about ten years or so, okay. 
+But in the case of fingerprint and iris, we have been led to believe that 
+they last forever, but there is no scientific proof for that. 
+And so just recently last year, 
+we conducted a study of about 20,000 individuals. 
+And the data came from Michigan State Police, 
+because they are the ones who often encounter the same person again and again. 
+And over a 15-year period, these 20,000 or so 
+individuals had been arrested multiple times. 
+So we have their fingerprint impressions on multiple encounters with the police. 
+And we showed scientifically using a multi-level statistical models, 
+that fingerprint accuracy over this time period does not degrade. 
+So those are the two important questions. 
+The third important question is, if biometrics is going to replace
+Play video starting at :10:49 and follow transcript10:49
+passwords and ID cards, 
+or used in conjunction with it, 
+what would happen if somebody steals your biometric traits? 
+That means that the template or 
+the representation of the fingerprint which is stored in the databases, 
+whether it's in your mobile phone or whether it's in your local bank.
+Play video starting at :11:10 and follow transcript11:10
+How do we secure it so that even if it is stolen, 
+it cannot be used or you can reissue a representation.
+Play video starting at :11:21 and follow transcript11:21
+That is, it's like a type of a credit card number which can be revoked and 
+then issued a new credit card number. 
+That is, I collect your fingerprint, but I never use the original version of it. 
+I use some transformed version of it. 
+
+
+## Peer Graded Assignment - Instructor Input
+To receive Honors recognition for peer-graded assignments in the capstone, you must submit your assignment, then peer grade several other student submissions and then the course teaching staff will review your assignment and complete the grading of your assignment. It may take several days for the teaching staff to grade your assignment so that you receive full credit.
+The instructor graded portion of the assignment is 3/10 points of the grade on the peer graded assignment (i.e. 30% of your grade). Since you must achieve 80% to complete the assignment within Coursera, your assignment will have a maximum of 70% and won’t be marked “complete” until the teaching staff completes their grading.
+Please allow at least 4 business days for the teaching staff to grade your assignment. The teaching staff will review the comments from your peers and review your submission before awarding a grade. If you have made a mistake in your submission, the teaching staff can send you a note and reset your assignment to allow for resubmission.
+If the teaching staff detects a violation of the Coursera Honor code that says that you can only submit your own work, it may result in permanent failure of this course or deactivation of your Coursera account according to the rules of the Coursera honor code.
+If you have questions or concerns about the grading of these assignments, please let us know in the discussion forums.
+Peer Grade: Page Rank
+First you will spider 100 pages from http://python-data.dr-chuck.net/ run the page rank algorithm and take some screen shots. Then you will reset the spider process and spider 100 pages from any other site on the Internet, run the page rank algorithm, and take some screen shots. You must score 80% or above to successfully complete this assignment.
+________________________________________
+This course uses a third-party app, Peer Grade: Page Rank, to enhance your learning experience. The app will reference basic information like your name, email, and Coursera ID.
+Coursera Honor Code  Learn more
+ 
+I, elham fazel, understand that submitting work that isn’t my own may result in permanent failure of this course or deactivation of my CourseCoursera account.
+Identifying Your Data Source - Introduction
+In this week, we want you to identify a data source and make a short discussion forum post about it. We have provided a reading page with a great set of starting points to give you ideas about some data sources that might be interesting to you.
+Once you identify and evaluate your data source, we want you to make a short post in the Week 3 Discussion Forum describing the data source and outlining some possible analysis that could be done with the data source. You should direct the post to your fellow students as they might want to do a project using the data source you are presenting.
+Making a post is completely optional. If you do not want to make a post, you are still encouraged to review and comment on some of the posts by other students.
+In later weeks you will analyze and present your analysis of your data. We are happy for the analysis to be done by either an individual or a group. 
+And even if you make a post on one data source - you are not bound to do a project on that data source. You may see a post from another student that piques your interest and you may choose to join their effort or just do some data analysis on your own using their data source. We want this optional discussion thread track to give you as much flexibility as you need to learn as much as possible from the work of your fellow students
+List of Data Sources (Instructional Staff Curated)
+This is a set of data sources curated by the instructional staff. Feel free to suggest new data sources in the forums. The initial list was provided by Kevyn Collins-Thomson from the University of Michigan School of Information.
+Long general-purpose list of datasets:
+•	https://vincentarelbundock.github.io/Rdatasets/datasets.html
+The Academic Torrents site has a growing number of datasets, including a few text collections that might be of interest (Wikipedia, email, twitter, academic, etc.) for current or future projects.
+•	http://academictorrents.com/browse.php?cat=6
+Google Books n-gram corpus 
+•	external link: http://books.google.com/ngrams
+•	Dataset: external link: http://aws.amazon.com/datasets/8172056142375670
+Common Crawl: • Currently 6 billion Web documents (81 Tb) • Amazon S3 Public Data Set 
+•	http://aws.amazon.com/datasets/41740
+•	https://commoncrawl.atlassian.net/wiki/display/CRWL/About+the+Data+Set
+•	Award project using Common Crawl: http://norvigaward.github.io/entries.html
+•	Python example: http://www.freelancer.com/projects/Python-Data-Processing/Python-script-for-CommonCrawl.html
+Business/commercial data Yelp external link: 
+•	http://www.yelp.com/developers/documentation/v2/search_api
+•	Upcoming Deprecation of Yelp API v2 on June 30, 2018 (Posted by Yelp Jun 28, 2017)
+Internet Archive (huge, ever-growing archive of the Web going back to 1990s) external link: 
+•	http://archive.org/help/json.php
+WikiData: 
+•	https://www.wikidata.org/wiki/Wikidata:Main_Page
+World Food Facts
+•	http://world.openfoodfacts.org/data
+Data USA - a variety of census data
+•	https://datausa.io/
+Center for Disease Control - variety of data sets related to COVID
+•	https://data.cdc.gov/browse
+U.S. Government open data - datasets from 75 agencies and subagencies
+•	https://data.gov/
+NASA data portal - space and earth science
+•	https://data.nas.nasa.gov/
+•	https://data.nasa.gov/
+Completed
+Go to next item
+I think computer security is the most exciting part of computing right now, 
+because it has something that nothing else has. 
+It has an adversarial relationship. 
+When you do graphics or operating systems or anything, 
+there's no one trying to thwart you at every turn. 
+And that's what you have in security. 
+That's what makes it exciting and interesting and that's what makes it 
+something that's forever changing and involves psychology and economics and 
+computing and law and policy and so many things. 
+So I think it's a great area to be in, to work in. 
+I think it's not going away. Right? As long as we have adversaries, as long as we have human 
+beings and ne'er-do-wells and evildoers we are going to need security. 
+So it's always going to be like that. 
+You know, preparing is interesting. 
+In a lot of ways, security is a mindset. 
+It's a way of thinking about the world. 
+And if you think about the original definition of a hacker, 
+as someone who sort of cobbles stuff together. 
+You hack this tool and it works. 
+And you put this piece together and this here and that. 
+And it all works. 
+And it's a great hack. 
+But I'm a security guy. 
+I'm going to say, well turn this like that, and it doesn't work anymore. 
+And you'll say, but don't do that. 
+And I'll say well no, no, no, I'm the attacker. I get to do that. 
+I get to do that whenever I want. I get to do it at the most inopportune time. 
+Get to do that in a way that makes your system fail as badly as possible.
+Play video starting at :1:42 and follow transcript1:42
+And you have to think that way. 
+Not about how to build something, not how to make it work, but how to make it fail. 
+And how to make it fail in precisely the right way to do precisely the right sort 
+of damage.
+Play video starting at :1:56 and follow transcript1:56
+And that's a way of thinking. 
+I mean, there are some people who go through their lives looking at systems and 
+figuring out, oh, I can break that. Oh, here's how to break that. 
+And you walk into a store and 
+you see the purchasing system. Oh I can steal something, here's how. 
+You walk into a voting booth. 
+Oh I can, sort of defeat this, here's how. 
+You might not do it, because of course that would be illegal, but 
+you think that way.
+Play video starting at :2:20 and follow transcript2:20
+And that mindset, I think, is essential for security. 
+Once you have that mindset, then it's a matter of just learning the domain.
+Play video starting at :2:29 and follow transcript2:29
+Learning the systems. 
+And whether it's a self-driving car or a voting system or a medical device. 
+And it's going to be embedded code, interacting with the real world in a way 
+that involves people and society and I can teach all that. 
+You can learn all that. 
+So I remember a class in security. 
+I forget who did this. 
+One of the assignments was, come in tomorrow and 
+write down the first thousand digits of pi.
+Play video starting at :2:59 and follow transcript2:59
+Okay, so two things about this test. 
+One, you can't memorize a thousand digits of pi, you have to cheat. 
+And actually the students were were expected to cheat. 
+But if they were caught cheating, they would fail.
+Play video starting at :3:13 and follow transcript3:13
+>> Okay. 
+>> That's interesting, right? 
+That teaches that mindset. 
+It allows you to think outside the box. 
+But how am I going to do this? 
+Am I going, and there are lots of ways people cheated, 
+and I sort of urge people watching 
+to go Google this, and to look at some of the stuff written. 
+It's a great way of trying to stimulate the mindset. 
+Can you teach it formally? 
+I don't know. 
+It's kind of like, it's a way of thinking. 
+And I think the more security classes you take, the more you exercise that mindset. 
+A lot of the hacker conferences will have capture the flag contests. 
+I remember an early one where they had to build their own private network to 
+cut down on both network latency and federal violations. 
+That's why you do it. 
+But you're going to learn a lot by breaking other people's systems. 
+And yeah, that's probably going to involve illegal activity. 
+And agreed, this isn't the best way, or 
+maybe it is the best way, it's not the most socially acceptable way. 
+But here we have this clash between the tech imperative and what society wants. 
+So many of our systems are black boxes.
+Play video starting at :4:30 and follow transcript4:30
+You can go and try to hack this, your smart phone or 
+your computer, and there's a lot of stuff you can learn. 
+But really it's going to be more fun if you can hack somebody else's cell phone or 
+somebody else's computer. 
+I want it to be open-ended. 
+I want it to be follow whatever it is you're interested in. 
+The neat thing about security is it can go wherever you want. 
+There's so many different subdisciplines. 
+I'm often asked, should I study forensics, or cryptography, or network security, or 
+protocols, or embedded devices, or SCADA systems? 
+Study what you want.
+Play video starting at :5:11 and follow transcript5:11
+And whatever interests you, follow that. Because really 
+what you're learning is how to think
+Play video starting at :5:19 and follow transcript5:19
+like a security expert. And honestly, if you get a job, and they make you do VPNs, 
+you can pick up VPNs. 
+That's easy. 
+It's the way to think. So do what you want. 
+And what we're learning right now is that demand is greatly outstripping supply. 
+Right? That people with expertise in security 
+have a guaranteed career, because there is such a demand for 
+it, and there's such a lack of supply. 
+>> Have you written any of your books kind of aimed at 
+those kind of pre-computer science students or 
+early computer science students that would sort of be a good read? 
+>> I tend to write my books for a general audience. 
+So I think of my parents, my friends. 
+So computer experts, yes, but really for a more general audience. 
+So going back to something like Secrets and Lies I wrote in 2000. 
+It's about how network security works. 
+Fifteen years out of date, but it's still a good introduction 
+on the basic concepts of how to think about security, 
+You know, later, cryptography engineering, how to engineer crypto systems. 
+My book Liars and Outliers, how to think about security as a way to enable trust. 
+Very non-technical, but very much, here's how security is embedded in society. 
+Now my latest book is about surveillance. 
+And David and Goliath talks about what's going on in the world of surveillance and 
+how we can regain security. 
+So to me all of these books are for 
+someone who might be interested in this field. 
+because what they're going to do is spark interest in different directions. 
+They're going to give people ideas that 
+they're going to go and research further. 
+And that's how you get your passion. 
+That's how you get your calling. 
+It's not that someone gives it to you. That you notice it going by and say, 
+hey, that's kind of neat. 
+I want to do more there. 
+[MUSIC]
+Spidering and Modeling Email Data - Introduction
+This week we do the first half of a project to download, process, and visualize an email corpus from the Sakai open source project from 2004-2011:
+http://mbox.dr-chuck.net/
+This is a large amount of data and requires significant cleanup to make sense of the data before we visualize it.
+Important: You do not have to download all of the data to complete this project. Depending on your Internet connection, downloading nearly a gigabyte of data might be impossible. All we want to do is to have you download a small subset of the data and run the steps to process the data. 
+Here is the software we will be using to retrieve and process the email data:
+https://www.py4e.com/code3/gmane.zip
+If you have a fast network connection with no bandwidth charge - you can download all the data. If you try to download all the data it may take well over 24 hours to pull the data. The good news is that because there are separate crawl, clean, model, and visualization steps, you can start and stop the crawl process as often as you like and run the other processes on the data that has been downloaded so far.
+So, now we're going to do our last visualization 
+and it's interesting that it's kind of we're coming full circle, 
+we're back to email and so instead of a few thousand lines of email, 
+we're going to do a gigabyte of email and you're going to spider a gigabyte. 
+Now, actually if you look at the Read Me on gmane.zip, 
+it tells you how you can get a head start by doing this 
+first 675 megabytes by one statement and then you can fill in the details. 
+The idea is that we have an API out there that will give us a mailing list. 
+Given a URL that we just hit over and over again changing 
+this little number and then we're going to be pulling 
+this raw data and then we'll have 
+analysis cleanup phase and then we're going 
+to visualize this data in a couple of different ways. 
+Now, this is a lot of data, 
+it's about a gigabyte of data and it originally came from a place called gmane.org 
+and we have had problems because when 
+too many students start using gmane.org to pull the data, 
+we've actually kind of hurt their servers. 
+They don't have rate limits, they're nice folks. 
+If we hurt them, they're hurt, 
+they're not defending themselves and so where Twitter and Google, 
+gmane.org is just some nice people that are doing this 
+and so don't be bug, don't be uncool. 
+I've got this http://mbox.dr-chuck.net that has 
+this data and it's on superfast servers that are 
+cached all around the world using this thing called cloudflare. 
+So, they're super awesome and you can beat the hack out of 
+dr-chuck.net and I guarantee you you're not going to hurt it. 
+You can't take it down. 
+Good luck trying to take it down, 
+okay, because it is a beast. 
+So, make sure that when you're testing, 
+you better use dr-chuck.net, dont use gmane.org. 
+Even though it would work, please don't do that. 
+I've got my own copy and okay enough said. 
+Okay. So, this is basically the data flow that's going to happen and 
+that is we go to this dr-chuck.net which has got all the data, 
+it's got an API and we basically had their sequence in number. 
+So, there just message 1, message 2, 
+message 3 and so we can have message 1, 
+message 2, message 3 and we know how much we've retrieved. 
+So, this program when it starts up it says how much is in 
+the database go down down down down down down oh, okay, number 4. 
+So, then it calls the API to get message number 4, 
+brings it back and puts it in. 
+Calls the API message number 5, 6, 7, 8, 
+9, 100, 150, 200, 300, oh crash. 
+Again, this is a slow but restartable process, okay. 
+So, then you start it back up and it's like oh we're 51. 
+So, we go 51, 52, 53, 
+54 and if you're really going to spider this all, 
+I think when I spidered at the first time, 
+it took me like three days to get all of it and so it's kind of fun, 
+right, unless of course you're using a network connection you're paying for. 
+Do not do that because you're going to spend a lot of money on your network connection. 
+If you're on a unlimited network or you're in a university, 
+it's got a good connection, then have fun. 
+Run it for hours, watch what it does. 
+It just grinds and grinds and grinds and grinds. 
+Now, what happens is it turns out that this data is a 
+little funky and it's all talked about in the read me but 
+this is like almost 10 years of data from 
+the psychi developer list and people even change their email address and so there's this 
+little bit of extra like patchy code called G model that has some more data 
+that it configures it and it reads all this stuff and it cleans up the data. 
+So, this ends up being really large and if you recall from the database chapter, 
+it's not well normalized. 
+It's just raw, it's set up to be it's an index it's very raw, 
+it's only there for spidering and making sure we can restart our spider. 
+If you want to actually make sense of this data, 
+we cleaned it up by running a process that reads this completely, 
+wipes this out and then writes a whole brand new content. 
+If you look at the size of this, 
+this is really large and this is really small. 
+If you have the whole thing, it can take, 
+depending on how fast your computer is, 
+it can take minutes to read this data because it's so big and this 
+is a good example of normalized data versus non normalized data. 
+So, it takes like- let's just say it takes two minutes to write 
+this because it is reading it slowly because it's not normalized. 
+This is nicely normalized. 
+It's using index keys and foreign keys and primary keys and all that stuff, 
+all the stuff we taught you in the database. That's here. 
+So, this is a small and you look at the size of the file, 
+it's roughly got the same information but it's represented in a much more efficient way. 
+So, then this produces content.sqlite and then the rest of the things read 
+content.sqlite because this is the cleanup phase, that's the cleanup phase. 
+Now, what you can do is you can run this for 
+awhile then blow that up then run this and that's fine because every time this runs, 
+it throws this away and rebuilds it and maybe look at some stuff and say "Oh, 
+I want to run some more" and then that's okay because now you can start 
+this back up and as soon as you're done with however far you went there, 
+you stop that and then you do this again. 
+So, you do this and it reads the whole thing and updates 
+this whole thing and so then once this data has been processed the right way, 
+then you run gbasic.py and it dumps out some stuff but it's 
+really just doing database analysis and then if we want to visualize it with line, 
+you run this gline.py and again that loops through all the data and produces the data on 
+gline.js and then you can visualize this with a HTML file and the d3.js. 
+If you want to make a word cloud, 
+you run this gword which loops through all that data, 
+produces some JavaScript that then is combined with 
+some more HTML to produce a nice word cloud. 
+So, the ReadMe tells you all of this stuff and gets you 
+through all this stuff and tells you what to run 
+and how to run it and roughly how long it's going to take. 
+So, you can work your way through all of these things. 
+So, in summary with these three examples, 
+were really writing a little more sophisticated applications. 
+I've given you most of the source code for these applications, 
+but you ca see what a more sophisticated application looks like and based on these, 
+you can probably build your own data pulling and maybe even a data 
+visualization technique and adapt some of these stuff. 
+So, thanks for listening and we'll see you on the net.
+
+[MUSIC] 
+Hello everybody, welcome to Python for Everybody. 
+Were doing some code walk throughs, if you want to get the source code you can 
+take a look at the sample code and download it, and work through it. 
+And so what we're working on now is doing some retrieval and 
+visualization of email data. 
+It's kind of ironic. 
+We're going to now look at the email data that we
+Play video starting at ::33 and follow transcript0:33
+look at the email data that we started with. 
+It's the same kind developer list email data. 
+And so there's this service called gmane. 
+And gmane archives developer list and various email list. 
+And I've made a copy of their data because all the students in my class getting 
+the same, their server with their API would crush it. 
+So in order to be a nice guy I put up a much more powerful server with 
+just the data from this one list. 
+And it's about a gigabyte of data. 
+So be real careful if you're paying for network. 
+[COUGH] So the basic process we're going to go through is we're going to have 
+a spidering process that's a simple restartable, 
+focused on the network problems, data pulling to pull content.sqlite. 
+And there's going to be a database there. 
+And then we're going to have a cleanup process. 
+This database is going to get large about a gigabyte. 
+And then we're going to have a process that takes kind of grinds through this 
+data it takes a while. 
+And so then it's going to read this mapping. 
+And I'll show you that when it comes because things like people's names have 
+changed over all these years. 
+And it does a clean up and 
+makes a really nice highly relational version of this data. 
+And then we visualize from here. 
+So this could take you several days to finish this. 
+This will take a few minutes to run. 
+And then this will just take seconds to run. 
+And so this is a multi-step process where if you were 
+doing something like running something for two days to produce a visualization. 
+And it blew up three quarters of the way through, it wouldn't do you no good. 
+And so that's why we break this into simple parts. 
+But right now we're just going to focus on this part right here and 
+take a look at the mail bit.
+Play video starting at :2:20 and follow transcript2:20
+The mail bit when retrieve the mail and 
+then we'll have another video to talk about the rest of this stuff, okay. 
+So let's take a look at the code.
+Play video starting at :2:33 and follow transcript2:33
+So here is gmain.py, that is is the basic code. 
+And it's hopefully the stuff starting to look familiar. 
+The thing that's weird here is we going to do some date time parsing and 
+there is code that's out there but you may have to install it. 
+And I had to write my code in a way that
+Play video starting at :2:51 and follow transcript2:51
+didn't assume that you could install the datetime parser. 
+And so it has it even. 
+If that's not there it uses my own datetime parser. 
+And that's what this code is, don't worry too much about that. 
+And of course we have to deal with the lack of certificates inside of Python.
+Play video starting at :3:7 and follow transcript3:07
+And so we start things out and this is really a simple table. 
+We've got a messages table that's got a primary key.
+Play video starting at :3:17 and follow transcript3:17
+The email itself when it was sent, what the subject and the headers and 
+the body, okay.
+Play video starting at :3:25 and follow transcript3:25
+And so what we're going to do is because we have to pick up where we left off. 
+We're going to select the largest primary key from 
+the messages table and retrieve that. 
+And then we're going to go to the one after that, okay?
+Play video starting at :3:44 and follow transcript3:44
+And so we know what the ID is and we're going to pick up where we left off.
+Play video starting at :3:51 and follow transcript3:51
+And so we have a starting point start's either zero or one. 
+And we're going to ask comony messages to retrieve. 
+We've got some counters, and so 
+we're going to say okay see if select id from messages 
+where id equals what our best starting is it's the highest number we've seen so far. 
+And if row is not none that's means that we've already retrieve 
+this particular email message otherwise we're going to keep on going. 
+And we're in good shape and this is one that we want to retrieve. 
+And we're subtracting that so we know, and so 
+this is the base URL, this is the URL of our API. 
+The one that I have a nice copy of all this data's on a server that's 
+accessible worldwide and won't crash.
+Play video starting at :4:41 and follow transcript4:41
+So the format of this, as you can say I would like the email address for one, 
+from one to two, or from 100, 
+oops from message 101 to 102, 
+we can walk through these things. 
+So that's the message ID, and so if we're going to make the URL 
+we're going to take this URL add the starting address and then add plus one. 
+So we got this slash at the end of the starting address and so 
+that's how we form those. 
+And we're going to retrieve that and we're going to decode it. 
+We've seen this in some other ones, 
+we're going to check to see if we got legit data. 
+If not if I get a 404 not found or something else, we're going to quit. 
+If someone hits Ctrl+C, which is our Ctrl+Z, we get the program to interrupt. 
+And we'll stop if there's some other problem, right. 
+We're going to complain and keep going. 
+And if we have five failures in a row we're going to quit but 
+it will just keep on going because these things do have glitchy bits here. 
+And so at this point if we made it this far we've retrieved the URL and 
+we've got the number of characters we've retrieved. 
+And if we get bad data if it doesn't start with from cause 
+this is a male message, right? 
+And they all start with from space if its right, 
+it started from space then what where going to tolerate up 
+the five failure there for bad data cause it could be bad. 
+And I'm going to find the blank line cause that the new line at the end of one line 
+and then a blank line. 
+And then we're going to take and break this into the headers, the mail headers. 
+Which is the mail headers is this stuff right here up to but 
+not including the blank line. 
+And then the body is everything after that, okay? 
+And so we'll just have break that into pieces. 
+Your eyes will complain and they tolerate up to five characters. 
+And then we're going to use a regular expression, 
+kind of from the regular expressions chapter to pull out an email address
+Play video starting at :7:1 and follow transcript7:01
+from colon line somewhere in this headers from colon right there. 
+It's going to go find a less than and 
+then pull, come on pull this stuff out up to it. 
+So you got the less than, you got the parenthesis. 
+You got one or more non-blank characters followed by an and sign, 
+followed by one or more non-blank characters. 
+And we'll get back a list of those, we should only get one.
+Play video starting at :7:25 and follow transcript7:25
+If we find one we're going to grab the email. 
+We're going to strip the lower case. 
+And if we got some little nasty less than sign in there we'll tolerate that as well. 
+So this is kind of clean up, and you get used to this where you're like 
+how come all these email addresses have this other stuff in them?
+Play video starting at :7:43 and follow transcript7:43
+And then we also look for it that there are no less than signs. 
+And we do this way this is that's different some mail messages have it this 
+way and there's again you write this code after you watch it for a while. 
+And like it's cracked out and giving you bad stuff. 
+And I make them all lower case so they match better and 
+get rid of bad characters. 
+Why now I got an email address. 
+Then what I do, is I look for the date of this. 
+So I'm going to graph these by dates. 
+So I look for this line and use a regular expression to pull that out, right? 
+So I'm looking for a date, followed by a blank, 
+followed by any numbers of characters, followed by comma. 
+So I'm not interested in this Wednesday bit so I'm skipping that bit right there 
+and going and grabbing everything after that comma space. 
+And so it's really here to the end of the line. 
+So that's the new line. 
+So it's going all the way, it's going to pull this bit right here that's the text.
+Play video starting at :8:44 and follow transcript8:44
+And this is where we're going to like say that's kind of a funky looking date and 
+we want to standardize that date. 
+So we're going to, let's see we're going to chop it off to 26 character. 
+Apparently I don't know what the 26 why do we care about the 26 character but 
+we chopped that off to 26 character. 
+And now we're going to parse it and 
+that's going to give us a nice clean date, sent_at date. 
+All now we're going to complete we're going to quit and if you can't parse it 
+then we're going to tolerate five bad email addresses in a row.
+Play video starting at :9:19 and follow transcript9:19
+Then we're looking for 
+the subject line using another regular expression, subject line. 
+Regular expression that's pretty easy up to but not including, right. 
+There's a blank there. 
+It's a subject Then we pull that out, we get the subject. 
+Now at this point we passed it we got good stuff so we reset the fail con. 
+because I kept saying if you fail five straight times you quit.
+Play video starting at :9:49 and follow transcript9:49
+And we're going to print it out and then we're just insert that stuff. 
+We got the the ID of the message which we've got email address 
+that it's came from the time it was sent the subject. 
+And then basically the headers in the body and we're just inserting it. 
+And now we're going to say every 50th we're going to commit it so 
+that's speeds things up and ever hundred we're going to wait a second. 
+So that's you know count is going up, up, up, up and 
+every 50th you'll see a pause and then it will every 100th it'll pause for a second. 
+Mostly that's to let me hit Ctrl+C or to not overload any server.
+Play video starting at :10:27 and follow transcript10:27
+Okay, so that's the simple one. 
+The problem is that the data just gets ugly. 
+And so you'll find yourself wanting to reset this and start it over. 
+This one's going to work, of course. 
+But it's these are hard to build and 
+that's why it's a good idea oops, 
+Python three gmain.py. 
+How many messages? 
+Well let's just do one.
+Play video starting at :10:55 and follow transcript10:55
+Okay, so it went and grabbed, do I have this already running? 
+51 through 52, let me start over. 
+S- 1 *sqlite. 
+Okay, rn content. 
+I must run it to test it.
+Play video starting at :11:11 and follow transcript11:11
+So let's run it again python3 gmane.py and ask for one message. 
+Okay, so there we went and got message one from one to two, we got 2662 characters. 
+And we printed out the email address the time we got it after all that hacking and 
+the subject line and that's what we've got.
+Play video starting at :11:30 and follow transcript11:30
+So if we take a look at the database, and we go into the gmain, any time you see 
+the content SQLite journal that means it needed to run a COMMIT. 
+And it hasn't run a COMMIT and it has to run COMMIT but I'll hit ENTER and 
+that will do the commit and you see that vanish. 
+So now I can open it and I take a look at.
+Play video starting at :11:54 and follow transcript11:54
+How come there's no messages? 
+Did that one not get stored in there for some reason? 
+It needs to refresh.
+Play video starting at :12:6 and follow transcript12:06
+Let's run it again.
+Play video starting at :12:10 and follow transcript12:10
+Maybe it didn't commit. 
+Maybe I got a bug in it.
+Play video starting at :12:17 and follow transcript12:17
+Let's make it change the code. 
+[SOUND] I'm going to, 
+see this connection.comitt, 
+see that connection.commit.
+Play video starting at :12:36 and follow transcript12:36
+going to commit there and the other thing I'm going to do is every 
+time I stop to read I want to commit right before I read it. 
+So I think we should I hope that doesn't blow up. 
+We'll see. 
+So the idea is if I want to stop I want to commit it. 
+So let's do this. 
+Let's do one message.
+Play video starting at :12:57 and follow transcript12:57
+And now I should hit is it committed. 
+Now that I put the commits in I think that it will look better. 
+[NOISE] Okay, refresh and there it is because I committed it. 
+And I don't have the journal file, so that's good, so 
+that's a good idea to put those commits there so I'll just leave those commits in. 
+When you download it it'll have these commits in there. 
+So again I put a commit here and a commit at the very, 
+very end to make sure. 
+So I missed that. 
+But now we get 1, right? 
+And so let's just run it again, and 
+you'll see how by selecting the max of the ID, it's going to select the max of this, 
+and then add 1 to it, so it doesn't do the next one. 
+So if I run it again, They say give me one message so it goes two to three. 
+And give me two messages.
+Play video starting at :13:51 and follow transcript13:51
+So I hit enter and I can do refresh and I see we've got four messages.
+Play video starting at :13:56 and follow transcript13:56
+And so let's just fire this baby up. 
+Tell it to get 100. 
+Run, run, run, run, run. 
+Right? 
+It just goes and goes and 
+it pauses once in a while to do commit and if I made a commit every time. 
+Oop, it just paused there. 
+Now, it finished. 
+So this will run and we will get a bunch of data.
+Play video starting at :14:22 and follow transcript14:22
+The problem is if I just run this, it will take about five hours, okay? 
+To run this and get this all. 
+And I've got a really fast connection. 
+So, I have got a file that you can download. 
+Let's go find it.
+Play video starting at :14:36 and follow transcript14:36
+Let's see if I can Let's see how long it'll take me to download this. 
+I've got a file that you can download and save. 
+Now I'm going to use the command line curl or 
+wget is another command that we Linux and Mac people can use. 
+I don't know, you will might have to use your browser to do it. 
+Let's see how long this is going to take. 
+It's retrieving, a 1:30 Okay. 
+Well, I'll just wait and 
+just come back. 
+[MUSIC] 
+Okay, so now that's done. 
+I was averaging ten megabits a second. 
+I downloaded about 600 megabytes, ten megabits a second. 
+That will probably be slower for you.
+Play video starting at :15:39 and follow transcript15:39
+So now if I take a look. 
+You're going to find that that content.sqlite is 624 megabytes.
+Play video starting at :15:49 and follow transcript15:49
+Now, what happens is I've free spidered this. 
+And so now if you run gmane.py and ask for 
+five more messages, it will pick up where I left that one off.
+Play video starting at :16: and follow transcript16:00
+So it's up to message 59,000. 
+And I think that, we saw an error. 
+Saw a bug in that one. 
+I don't know what's wrong with that one. 
+So let's see if, so at this point we're going to have most of the data. 
+It might find its way to the very end.
+Play video starting at :16:16 and follow transcript16:16
+Once you get this, it should be not too much more. 
+I don't know. Maybe it's 63,000 or something.
+Play video starting at :16:24 and follow transcript16:24
+So what we'll do is, we will let that run. 
+And we will come back when that one's finished, and 
+run then the next phase after it's got all of its data, okay? 
+So thanks for listening. 
+[MUSIC]
+Hello everybody and welcome to Python for Everybody. 
+We are going to do, be doing some code walk throughs. 
+If you want the sample code though you can download the zip from our website. 
+The work that we're doing right now is we are in the process of building 
+a spider and visual- visualization tool 
+for email data that came originally from this website gmane. 
+But I've got my own copy of it. 
+And so, what we've done before is we ran gmane.py and I grabbed a url. 
+I have a url that has all this data, 
+and I downloaded that and then I ran gmane again to catch up. 
+And so, it took quite a bit of catching up 
+but by the time I get to- Remember how I said it run, 
+tries to fails five times. 
+Well, it ran out of data at 60,421 and then it started failing and then it quit. 
+And so we pretty much have all of our data now. 
+We have all- We have finished this process and S content SQLite, okay? 
+And if I take a look in the database browser, 
+we can see we got 59,823 e-mail messages. 
+And so, if I look at any of these things, 
+you see the headers, 
+you see the subject line, 
+you see the email address, 
+you see the body of it. 
+So remember I split the body into- in half 
+and then the headers and so that's- I made this as raw as I possibly could because, 
+as you saw, I had to spend so much time in 
+the gmane just putting the data successfully retrieved. 
+And so, I don't like cleaning the data up too much. 
+And so, what we're going to look at next is the data cleaning process. 
+Okay? And so, this is gmodel.py is what we're going to take a look at now. 
+So let's get rid of those guys and look at gmodel.py. 
+I don't think I need url lib in this code. 
+Do I have any urllib? 
+No. So I don't need that. 
+Sorry. Fixed that. Okay. 
+So, it's going to read from the database, 
+it's got a call reg, it's going to use regular expressions. 
+And zlib is a way to do some compressions 
+so I'm going to do- In this one I'm going to compress some of 
+the data to make it so that I have 
+less data to- some of the text fields are going to be compressed. 
+I wanted to keep these fields uncompressed inside of messages. 
+And so, we have some just cleanup messages 
+and cleans things up and it turns out that the way e-mail addresses, 
+in this particular mail corpus, 
+they changed over time and we- there's certain kinds of things. 
+Sometimes the gmane.org is the e-mail address when people want to hide their address. 
+And I made all kinds of stuff, 
+and I split it, 
+and checked to see if it ended with this, 
+and I cleaned up things, 
+just that and nothing. 
+And so, I have all kinds of cleanup stuff going on in here. 
+And I'm just mapping and DNS mapping, 
+that I'll talk about in a bit, 
+where organizations sometimes sent e-mail with different addresses over time, 
+and people sent e-mail from different part time. 
+And we're going to do the parsing of the date and that is the code for that. 
+We're going to pull out the header information. 
+This is sort of borrowed from the other code. 
+We'll clean up the e-mail addresses and the domain names. 
+And we'll pull the data out, 
+pull the subject out, 
+pull out the message ID, various things. 
+So, here's the main body of the code. 
+We're going to go from content.SQLite to index.SQLite. 
+And what I'm going to do every time is I'm gonna wipe out 
+index.SQLite and drop it to the messages, 
+senders, subjects, and replies. 
+So this is a normalized database and that it has foreign keys. 
+So, there's a messages table here with the integer primary key, 
+the guid for it. 
+GUID stands for Global Unique ID, sen times, 
+sender ID, and then it's going to have a blob. 
+These are blobs, binary large objects, 
+for the headers and the body because I'm going to compress 
+them in this database to make them. 
+And then the senders, 
+each sender has a key, and then subjects, 
+each subject line is going to have a key, 
+and then replies are a connection from one message to another, 
+and so this is like a many to many. 
+Now, I also have this file called mapping.SQLite. 
+And so, we can take a look at that one: 
+Mapping.SQLite. 
+And so, what happened is this has two tables that I hand deal with. 
+And so sometimes Indiana- this was a e-mail address that mapped to that. 
+That's, so Indiana.edu, that's a way to take- that's the e-mail address. 
+And then these were a bunch of people 
+that had e-mail address changing throughout the project and I sort of, 
+kind of, mapped them in a way. 
+And so, this is just sort of like a- I pulled this in really quick, 
+and I read all this stuff from the DNS mapping and 
+I- other than stripping and making this lower case etc. 
+I just am going to make a dictionary. 
+DNS mapping, which is the old name to the new name, 
+and the e-mail address mapping from the old name to the new name, and then fixsender. 
+Fixsender is because the e-mail address is even within gmane were kind of funky. 
+So, don't worry so much about this. 
+Okay. And so, now what I'm gonna do is I opened up a connection 
+just to read all that stuff in and now I'm going to actually open the main content. 
+And I'm asking it to open, this is a little trickier. 
+I open that read only. 
+That was so that I could potentially be running 
+the spider and running this at the same time. 
+I get a cursor. 
+And so, I'm going to read through so in the content file, 
+this is the big one, I'm going read through and go through every one and 
+write all of these things in. 
+And I'm going to take all the e-mail addresses and I'm going to put 
+those in a list. So I loaded that. 
+I've got the mappings loaded. 
+And so, now I'm going to go through every single message. 
+I've got all the senders, all the subjects, 
+and all the global unique IDs. 
+So I read in each message, 
+so now I'm going through content one at a time. 
+I parse the headers. 
+I check to see if the sender's name, email address, 
+after it's been cleaned up, is in the, 
+is in my mapping, mapping.getsender, 
+and the default is like a back sender. 
+So that's what that's saying. 
+Look up sender, if it's in there, 
+give me the entry of that key. 
+Otherwise, give me send her back. 
+We're going to print every 250 things we do. 
+We'll complain if this is true. 
+We're going to go get the mapping between 
+the senders which is a way to look up the primary key. 
+I could have done this with a database thing but I wanted it to be fast. 
+So that's part of the reason I read all these things 
+in so I can have those mappings to be really fast. 
+You'll see this takes a little while even though it, 
+you know, even though I've got all the stuff cached. 
+And so then, if I don't have a sender ID, 
+meaning that I haven't seen it yet, 
+then I'm going to do an insert or ignore into senders. 
+And then I'm gonna do a select, 
+and then you've seen this where I grab the row back and I'm 
+really just trying to look at the recently assigned ID. 
+And then I'm going to, not only, 
+set the sender ID for this iteration loop, 
+but I'm also going to store it in the dictionary and so that builds this dictionary up. 
+And you'll see the same thing is true for subject ID. 
+I'm going to insert it into the subject table and get 
+a primary key if I don't know what it is. 
+And then I'm going to put it into, 
+not only am I going to put it into the database, 
+but I'm also going to put it into my dictionary. 
+And the same thing... 
+I guess I didn't do it for the guid. Okay. 
+So now what I have is the sender ID and the subject 
+ID which are foreign keys into the center table and the subject table, 
+and I'm going to insert the message with the sender ID, 
+subject ID, the sent that headers and body. 
+And the values here are the guid sender ID, subject, sent at. 
+Now, this here, zlib.compress. 
+So what I'm taking is the message, 
+the header, and the body, 
+and this little bit ends up with 
+the compressed version of this stuff and you'll see it in a second. 
+And this keeps the size of these text things down at the cost of the computation of- 
+We have to look at the cost of 
+the computation to compress and decompress when we want to read it. 
+Okay? 
+ 
+## Visualizing new Data Sources - Introduction
+This week you will discuss the analysis of your data to the class. While many of the projects will result in a visualization of the data, any other results of analyzing the data are equally valued.
+If you have not been participating in the project aspects of the class we encourage you to read and comment on the posts made by other students.
+Hello, we have impromptu office hours here in Ann Arbor, Michigan, 
+in my very own office. 
+I had two former students stop by as part of a visit to 
+University of Michigan campus. 
+So, I'll let them introduce themselves and say a little bit about the class. 
+Here we go. 
+>> Hi, my name is Emma, and I took the class last time on Coursera and 
+I got so much from it. 
+I was so excited to come here, to Michigan, and we thought we'd stop by and 
+meet the teacher, and we're really excited to be here. 
+>> So what are you doing this summer? 
+>> So this summer I'm teaching, actually, 
+an Intro to Computer Programming class on the Raspberry Pi computer. 
+Because I learned so much from the course on Coursera, 
+I wanted to share that with more kids and more students like me, 
+that I wanted to help them learn more about programming. 
+>> Has that started yet? 
+>> Not yet, It'll be going on last week of July. 
+>> And how many do you expect to have?
+Play video starting at ::59 and follow transcript0:59
+>> Hopefully, we're looking, because this is the first time we're doing it, 
+probably just a small class, like five to seven students that we're hoping to have. 
+>> Cool. Well, the materials are all free. 
+>> [LAUGH] >> Right? 
+>> Yes, right. >> And you? 
+>> And I'm Nick and I also took the course and really enjoyed it. 
+I would say many folks remarked that the course gets harder after a bit. 
+I would say stay in there. 
+Do what you can because it really pays off. 
+It starts out very easy and so 
+if you find it gets harder, stay in there because that's where the learning happens. 
+>> Excellent, excellent. 
+So there we go, impromptu office hours where the office hours came to my office.
+Play video starting at :1:41 and follow transcript1:41
+So, I think my next my next office hours are going to be in Traverse City, 
+Michigan. 
+So that will probably have, like, two people, because that's way far out. 
+I'm thinking of having exotic office hours at really far-out locations. 
+So, see you on the Net.
+
+[MUSIC]
+Play video starting at ::13 and follow transcript0:13
+Hello, and welcome to Conversations with Computing. 
+In this column I take a look at some of the second order effects of the technology 
+that Steve Jobs produced throughout his career. 
+And how those technologies from Apple and NeXT often served as an inspiration 
+to many of the early innovators in the Internet and World Wide Web.
+Play video starting at ::32 and follow transcript0:32
+I found out that we've lost Steve Jobs on the evening of October 5th, 
+right in the middle of a lecture on using regular expressions in Python. 
+I was recording the lecture for a later podcast.
+Play video starting at ::44 and follow transcript0:44
+>> because you might want to go down the nerd rabbit hole later and that's okay, 
+there's nothing wrong with avoiding the nerd rabbit hole but 
+this is a nerdy thing. 
+It's extremely nerdy.
+Play video starting at ::54 and follow transcript0:54
+I think it's awesome. 
+>> I have a nerdy announcement. 
+>> A nerdy announcement? 
+>> Steve Jobs just died. 
+It happened 10 minutes ago.
+Play video starting at :1:6 and follow transcript1:06
+>> Really and, it's kind of verified? 
+It's not some- >> That is why we are all so sad. 
+>> [NOISE] The very next week in the same classroom I was giving my 
+lecture on the inside story of the history of the Internet and 
+the World Wide Web, sharing some of my interviews with early pioneers. 
+As I gave the lecture and watched my video interviews thinking about Steve Jobs, 
+I began to realize how important Apple and 
+the NeXT technology was to those early innovators. 
+In some ways, the very existence of those technologies 
+helped propel the Internet and web revolution forward.
+Play video starting at :1:43 and follow transcript1:43
+In my 1999 interview with Robert Cailliau,the co-inventor 
+of the World Wide Web, 
+we are sitting in his office by the next cube that ran the very first web server. 
+As Robert describes how the next step to development an environment 
+allowed them to quickly build prototype versions of a web browser in 1990, 
+you get the sense that their NeXT hardware and 
+software was very much an equal partner in their early visions of the web. 
+>> Obviously the whole of [INAUDIBLE] Physics has been this sort 
+of miniature information society since way back when. 
+Seems there were networks essentially. 
+And so because we have this need for 
+spreading documentation around we built these things like centralized databases. 
+There was sudden doc you know? 
+You could use it but whatever. 
+We had well, we still have large database of Physics Analyticals kept by Stanford. 
+And you could get at it before the web by knowing exactly what 
+computer to log into over the network, blah, blah, blah, blah. 
+But it was all very difficult. 
+And then so when Tim invented the Web, and I had a separate proposal, 
+I dropped it, because Tim's proposal ran over the Internet, and 
+that was clearly much more efficient. 
+And when the web came, all that necessity of knowing which computer to go to, 
+what to say to that computer and so forth, just disappeared.
+Play video starting at :3:8 and follow transcript3:08
+People put up these pages with the links and you could just follow links and 
+get to places where you wanted to be and find everything. 
+And it was also all in the same format. 
+So that was very important too, that we broke this proprietary commercial 
+system of vertical markets, which don't let you get at anything 
+except if you stay with this particular company or with that particular company. 
+So that horizontal split, that cut that we made between the browser's on top and
+Play video starting at :3:36 and follow transcript3:36
+the database is at the bottom, it was I think essential to make it useful for 
+us, but also to make it useful for everybody else.
+Play video starting at :3:44 and follow transcript3:44
+And so that was what it was like in the beginning. 
+And Tim and I did this all on this NeXT machine here in about 1990. 
+So the first server was about 1990. 
+The first, end of 1990. 
+The first server in the United States came up about a year later 
+at Stanford because of that database that I was talking about before. 
+The real problem was that this development system is so much 
+better than anything else that porting what we had here to any other platform. 
+Took an order of magnitude more time. 
+And, for example, every time you clicked here you had another window. 
+Every time you clicked on a diagram you had a diagram in another window. 
+When you clicked on the map, you got the map in postscript, 
+scalable, perfectly printable, and so on and so forth. 
+You try to port that to another system, you go berserk. 
+And there is a big difference between making an editor and 
+something that just puts out a page and you can't do anything with that. 
+So, our system from 1990 was also the editor. 
+I mean I started, it's only after NeXT stop making hardware, 
+and I have to go back from a NeXT to a Macintosh, I have to learn HTML. 
+Right, I mean before, we produced all the documentation and stuff but 
+we never saw any of it. 
+We never saw any HTML, we never saw any URLs, right? 
+Because you linked by saying link this to that. 
+Not by typing in the URL. 
+There was a special window. 
+You could call up in which you could type the URL if you needed to, but 
+that wasn't the usual thing. 
+And this navigation prompt which say http dot, dot, dot. 
+I learned all that. 
+The hard way afterwards that you have to use that 
+because we've lost that system, right?
+Play video starting at :5:44 and follow transcript5:44
+>> Steve Job's NeXT workstations were essential to the creation of the earliest 
+web software.
+Play video starting at :5:49 and follow transcript5:49
+Their advanced development environment and 
+rich display capabilities led early innovators to think of the Internet, 
+less as a text only, and more as an engaging multimedia experience.
+Play video starting at :6:1 and follow transcript6:01
+In my 2007 interview with Paul Coons, 
+who brought up the first web server in the United States on an IBM 
+mainframe at the Stanford Linear Accelerator in December 1991, 
+we can see that he still has a working color NeXT work station in his office.
+Play video starting at :6:17 and follow transcript6:17
+When Paul was developing software for 
+the IBM mainframe there were around 20 web servers in the entire world.
+Play video starting at :6:23 and follow transcript6:23
+If you wanted a web browser to test your server, 
+having a NeXT workstation was essential.
+Play video starting at :6:29 and follow transcript6:29
+>> So, when I was at CERN in September 1991, and
+Play video starting at :6:34 and follow transcript6:34
+Tim Berners Lee dragged me into his office to show me and give me a demo of the Web. 
+When he, at first, 
+I wasn't very interested, but when he demonstrated doing a query to a help 
+system database on a mainframe, I immediately put two and two together. 
+So as well, if you can query a help system on a mainframe, 
+you can query a database on a mainframe. 
+The database itself had about 300,000 entries.
+Play video starting at :7:1 and follow transcript7:01
+>> And was it heavily used before you put it on the web and then continued- 
+>> Yeah, it was heavily used. 
+People had signed up for half the computer accounts on the main frame so 
+they could do their queries and
+Play video starting at :7:16 and follow transcript7:16
+from all around the world I think there was some 4,000 some registered. 
+>> So did you have to write it all from scratch? 
+I mean, did you write it from the protocol or 
+was there software that you reused to make your first web server. 
+>> Well, I used the CERN server software, which was written in C. 
+And, fortunately, we had a C compiler on the mainframe at that time. 
+It wasn't very long that we had a mainframe 
+that had a C compiler, but we had one.
+Play video starting at :7:40 and follow transcript7:40
+So all I had to do, was to write some extra C code to
+Play video starting at :7:47 and follow transcript7:47
+get the query that the user had made and turn it into a database query.
+Play video starting at :7:53 and follow transcript7:53
+>> Now, wasn't the original web server on a NeXT?
+Play video starting at :7:56 and follow transcript7:56
+>> Yes, all the web software was originally developed on the NeXT 
+computer at CERN. 
+>> While the web and web technologies were gaining traction in the academic and 
+research communities who often had access to powerful Unix workstations on their 
+desks, the rest of the world was browsing the Internet using the text oriented 
+Gopher clients and servers.
+Play video starting at :8:17 and follow transcript8:17
+>> In 1993 the National Center for Super Computing applications 
+at the University of Illinois released NCSA Mosaic. 
+Mosaic was the first graphically rich web browser that ran on Unix, Macintosh, and 
+Windows. 
+In my 1997 interview with Larry Smarr, 
+he points out that the success of the NCSA mosaic browser, 
+occurred in part because of earlier work developing the NCSA image library, to take 
+advantage of the graphics capabilities of early Apple Macintosh computers. 
+>> What we basically did during that late 80's period was
+Play video starting at :8:53 and follow transcript8:53
+to make the world safe for images.
+Play video starting at :8:57 and follow transcript8:57
+What NCSA Image did was basically, we said we want to build a world of infrastructure 
+in which it's as easy to move an image around as it is to move a word.
+Play video starting at :9:12 and follow transcript9:12
+That was our design parameters, and that's the way we talked about it back then. 
+So that meant we had to scale the network, scale the disk drive, 
+scale the compute power. 
+We had to go to full color when the Mac II first came out, 256 color levels.
+Play video starting at :9:29 and follow transcript9:29
+We got 50 of them, Apple gave us 50 Mac II's, which was stunning in those days. 
+We were, in fact, were the largest funded group in the, 
+academic group in the country for the Apple Advanced Technology Group.
+Play video starting at :9:43 and follow transcript9:43
+IBM at that time was telling their customers you don't need color, 
+we've already provided it as I said, you have four of them, black, white, 
+cyan and magenta. 
+Why would you need more?
+Play video starting at :9:56 and follow transcript9:56
+So what we did was we took, things that were on $100,000 computer 
+graphics work stations of image processing that medical imaging people used, 
+satellite recognizance people used. 
+And we took all of that and put it in a software in NCSA image on the Mac. 
+And, so you could just move the mouse and 
+do what it would otherwise cost you $100,000 to do. 
+And you would have to be an elite specialist. 
+But again thank you [INAUDIBLE] elite people knew how to do, 
+could afford to do, and making it available to the masses. 
+>> The day after I found out that Steve was no longer with us. 
+I happened to have a morning meeting in New York City. 
+So I went to the Apple store in Manhattan. 
+To get a sense of our collective reaction, 
+to the loss of such a brilliant visionary who's affected us in so many ways. 
+Hello everybody. This is Chuck. 
+I'm here at the Apple Store in Manhattan. 
+I'll show you kind of what we're seeing. 
+We're seeing press, we're seeing impromptu memorial for Steve Jobs 
+that's got apples, it's got flowers, it's got all kind of really, really cool stuff.
+Play video starting at :11:2 and follow transcript11:02
+But the crowd seems really quiet. 
+There's a media that's interviewing all the people. 
+You can see the media there grabbing people off the street and 
+interviewing them. 
+I'm sure they're capturing their thoughts, and so here we are sort of one 
+day after advancing of Steve Jobs. 
+Throughout his career at Apple and NeXT, and then again at Apple. 
+Steve Jobs was never interested in the least expensive nor 
+the most profitable technology. 
+He pursued the best and the most advance technology in many of his designs and 
+decisions, he provided a road map for the entire consumer technology market place. 
+It's no wonder that many of us would wait with breathless anticipation for each and 
+every Apple announcement. 
+They were always an exciting glimpse into the future of technology. 
+Over the past 30 years, the products that came from Jobs companies were a joy 
+to use and perhaps more importantly, they inspired many innovators to 
+keep their focus on the exciting and unexplored future. 
+[MUSIC]
+Post-Course Survey
+We are very interested in strengthening and improving our online learning experiences. We would love to get your feedback on this course to help us identify what we're doing right and what could use improvement. Please participate by taking our short survey at the link below:
