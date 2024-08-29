@@ -1,0 +1,24 @@
+A third important attribute of the training experience is how well it repre-
+sents the distribution of examples over which the final system performance P must
+be measured. In general, learning is most reliable when the training examples fol-
+low a distribution similar to that of future test examples. In our checkers learning
+scenario, the performance metric P is the percent of games the system wins in
+the world tournament. If its training experience E consists only of games played
+against itself, there is an obvious danger that this training experience might not
+be fully representative of the distribution of situations over which it will later be
+tested. For example, the learner might never encounter certain crucial board states
+that are very likely to be played by the human checkers champion. In practice,
+it is often necessary to learn from a distribution of examples that is somewhat
+different from those on which the final system will be evaluated (e.g., the world
+checkers champion might not be interested in teaching the program!). Such situ-
+ations are problematic because mastery of one distribution of examples will not
+necessary lead to strong performance over some other distribution. We shall see
+that most current theory of machine learning rests on the crucial assumption that
+the distribution of training examples is identical to the distribution of test ex-
+amples. Despite our need to make this assumption in order to obtain theoretical
+results, it is important to keep in mind that this assumption must often be violated
+in practice.
+To proceed with our design, let us decide that our system will train by
+playing games against itself. This has the advantage that no external trainer need
+be present, and it therefore allows the system to generate as much training data
+as time permits. We now have a fully specified learning task
