@@ -1,0 +1,127 @@
+# Newton-Ofson Harmony and Numbers Recharge
+Example: Paying a specific tax rate based on income level:
+In the method of IF nested
+If the income is zero, my tax rate is zero. Otherwise, if it is less than 8.925 (ie not negative income)-the tax rate should be 10 %, it will be 0.1, otherwise I would have to check less than 36.250 and so I will write these conditions inside if.
+Hey, we are increasing the level of indentation. We simplify the program to use fewer characters.
+Q: In summary calculations, what is wrong to calculate the tax rate?
+
+
+
+# Several Harmony Series Applications:
+The whole harmony series is as follows:
+
+For this range I add 1/i to the current sum.
+And he finally prints the sum in the Khorji. In fact, we are going to be approximated here.
+Because the LN is from the MATH library, we must first import this library.
+Second use of harmony:
+Calculate Numbers: I convert the problem of finding attraction into rooting.
+
+
+# Newton-Rafson Method
+
+The purpose is to find the root of the function (curve). Idea: Newton-Rafson method
+Here my function: F (x)-I start from a desired point-I will update that point (slope) and then t-I will count on this derivative point and based on ... hey I get closer as you can see in the picture above.
+I want to know where the function is zero.
+That is, I first got Zero.
+The more I repeat this method, the closer I am. I continue to 15 decimal places.
+To increase the accuracy of this epsilon = 1E-15, I do the calculation.
+I first start with t = c until I do that update when this difference is while ABS (T-C/T)> (epsilon * t).
+T new T plus c/t divided by 2:
+
+
+## Problem: Gambling Bankruptcy:
+
+A gambler ... he has money-for every betting-if the milk comes, a dollar will be added and if the line comes, one dollar will be reduced.
+As in the first curve, the first line-the first line and the money declined, and the third time that the milk has been added-as much as the money we set out from the beginning. Or the money is finished and to zero (the second curve).
+Either completely or reach the goal he wants from the beginning.
+We want to see how much milk or line we need on average, and how much do we have?
+Monte Carlo Simulation: We have a random variable, a random variable can get different values,
+For example, throwing a coin can get different values, the coin throw can be two.
+Its value is unclear until the test, so they are called random variables.
+We are attributing to each potential- there are two values ​​here, but in general it can have more values-
+The purpose of simulating Monte Carlo is that a random variable can estimate mathematical or Expected Value. If I give you a coin that you don't know the likelihood of its milk and line, you want to know how many milk is, for example, how much the possibility is?
+You throw the coin many times and write the result of each throw.
+Here we have three inputs. First, we read the input values, the greater the number of tests, the more accurate the number is.
+Three inputs: Inventory Inventory value-Targeted Inventory-Number of repetitions (you want to repeat it for =.)
+I have milk and lines many times-through my random function on the computer-if the valve comes, I will raise my dollar if the line came to reduce my dollar.
+I repeat 1000 times, for example, and I do not be out of this 1000 times
+I won 300 times and 700 times the loser
+Possibility of winning: 300/1000 = 30%
+On the load that a step is reduced or reduced, I am betting-to calculate the multiple betting requires all betting and the number of division = average.
+If I start with a steak and get to Gaul, how likely I will win in this game.
+Answer Question Two: Consider the number of stairs. This test only once- we have to repeat this test over and over again because it accidentally gives one result.
+I want to see if I have time to participate in this game?
+
+
+Explanation of the above code: We have three Verdi and I will specify two outputs first.
+Libraries I want to get from the incoming steering line-Sys Library
+And because I want to create random numbers, I use the Random Library.
+First we need to specify our inputs and outputs. One of our valuables-the amount of the initial creature that came out of the command line. Stake is an integer and I convert ARGV [1] to the integer-and inoto variable stake.
+I read the purpose of the same complaint from the command line-and that I want to repeat the tests several times, this is the integer I read from the command line, two to the output, one of the possibility and one bet-for the boards to account. I have to divide the number of boards by the total number of tests wins = 0- So I put the number of boards first and also want to calculate the number of schemes.
+I want to repeat the whole process. Trails are a number of repetitions so I can use the for loop. (We've already learned to use the for loop when the reproductive repetitions.)
+This ring is repeated a thousand times-now I want to use simulation-focus on one rainfall. I put the start value the same as the initial value of the stake. This is the amount of our money that is increasing and increasing. STAKE I started with the first $ 10.
+How long should I continue the game? As long as we exist, the Cash is larger than zero or smaller Goal.
+Now I repeat-I have to count the number of coins
+So I add one value of BET = that means we're going to throw the coin once.
+Now I want to do a lion or line that we said I use the Random Library.
+That is, produce from zero to one less than 2 = numbers zero and one, produce 50 % zero and 50 % of the time a one
+Ino == 0 if random .andrange (0,2) is zero, if it was zero, we consider it as a positive win and increase the amount of inventory as one unit, if we consider a loss- in the middle of this cache. I reduce a unit.
+Now I check, put the Cash against Goal.
+We have to put two equal to the work. So then I would add one number of boards. Now I have to produce the outputs that with two commands
+I want to calculate the chance, how much the chance is? Of the total number of these 1000 should be trails
+So I convert it to the output as a chance to convert it to the string, I want to say in percentage, so I multiply one 100 in the number of boards divided by the total number of tests we did.
+Average Number of Bets Required = The total number of all the bets we did in the game, just divide the total number of tests = The average number of necessary bets
+Our first installment is also the variable, which the first BET we added each time we added to the total number of experiments,
+To run the program-because three input modules want to run from the command line-CMD = CD Desktop because my program is stored on the desktop.
+Once a DIR directory, let's just be here- after we were confident with the Python-Name of the program and then the inputs we want 10 times 20 times and because I want to reach 1000 times- if everything is right, 52 % are in my chances. And the average betting of 100 is 100-if I want the results to be more accurate then the number of lamb tests is best
+10 20,000 10,000 times and this makes us closer to the actual number
+
+
+
+## Earning a bunch of sheets as an application of array:
+We want to produce a bunch of sheets and select a random card or choose a random one to remove a sheet with a shuffle algorithm
+If you are going to stay constant, we will define it with uppercase in Python.
+
+Cards Representation:
+Selection of a random card: Call from the Random Library to the desired function.
+We make an index from zero to 13:
+I enough Rank, SUIT to print and print it.
+We can use the choice function instead of two middle lines that take a list and produce a random function-
+
+Create a bunch of sheets and print them in the output:
+
+How are the cards printed?
+DECK means 52 to card
+We write two nesting rings.
+I paste the Rank into a SUIT string.
+So we produce a card.
+Tap: That is, a random replacement that is equal to the possibility of producing any place: the market for the elements of an array
+First time I on the first nose-every time one of the elements .. until it reaches the last element
+In the first element I because it is equal to R, so this card will move with it, so there is no change.
+i go ahead. This time I produce random numbers can be from zero to a
+And so I will continue.
+
+Fisher: The algorithm of the Konth in linear time produces a uniform random array of input array. The advantage of this algorithm is its fast or linear time. That is, this algorithm can randomly put the elements together.
+Objective: With an array, rearrange the elements in a random order.
+
+Algorithm:
+
+The total number of sheets is 52
+I want from zero and I myself from the Randrange function. As a result, I produce random number. Now I move home I with Deck R.
+As a result, a replacement for us creates a picture of 52 cards.
+
+
+
+Select a few random cards: I use the shafel algorithm
+This is the same as the composition that we want to choose from the different n object M. Repeat is not allowed.
+We introduce in the code line.
+Perm Line: Selecting numbers is duplicate.
+In the end ring, I choose one element every time and change it with I.
+Perm [i], perm [R]: Multiple assignment
+Prints the first presentation that are randomly present at home I.
+
+Summarize:
+The text explains the process of generating and shuffling a deck of cards using an array in Python. It discusses randomly selecting a card from the deck and creating a representation of the cards. The Fisher-Yates algorithm is mentioned as a method for efficiently shuffling the cards, ensuring a uniform random permutation. The goal is to rearrange the elements of the array in a random order. The algorithm is described step by step, including generating random numbers and swapping the elements. The text also mentions selecting multiple random cards using the Shuffle algorithm, which involves choosing a specific number of objects from a set without repetition. The provided code snippet demonstrates selecting and printing randomly chosen elements from the initial array.
+
+
+
