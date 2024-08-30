@@ -1,0 +1,1021 @@
+# Python Basic
+Python Basic
+ 
+ 
+ 
+ 
+  
+   
+ 
+2016 Average Developer Salary in the U.S,
+ 
+Companies that uses Python
+ 
+Django-Powered Applications
+  
+ 
+Modules
+ 
+Python Frameworks
+ 
+ 
+Basic Syntax
+Variable
+
+
+ 
+Variable Assignment
+ 
+Multiple Assignment
+ 
+Basic Operators
+ 
+ 
+Python Comparison Operators
+ 
+Python Assignment Operators
+ 
+Python Bitwise Operators
+ 
+Python Membership Operators
+ 
+Python Identity Operators
+ 
+Python Data Type
+ 
+ 
+Mutable vs. Immutable Objects
+
+
+ 
+ 
+	 
+ 
+Indexing, Slicing, and matrixes
+ 
+ 
+ 
+ 
+ 
+Basic Tuple Operation
+ 
+ Dictionary Examples
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Strings
+ 
+Accessing String Values
+ 
+Updating Strings
+ 
+ 
+ 
+ 
+ 
+Decision Making
+ 
+ 
+ 
+ 
+   
+   
+     
+   
+ 
+     
+Examples
+   
+ 
+   
+   
+ 
+ 
+ 
+   
+         
+ 
+               
+                 
+   
+Object Oriented
+ 
+Python Decision Making
+     
+Python Loops
+   
+Loops Control
+ 
+Range()
+ 
+Range() Parameters
+ 
+Scope Resolution
+ 
+ 
+LEGB Rule
+ 
+Functions
+ 
+ 
+Docstrings
+ 
+Comments
+ 
+Functions Examples
+ 
+Functions
+  
+   
+ 
+            
+  
+       
+     
+        
+          
+ 
+             
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+   
+     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Python Mini_Projects(1)
+Explanation:
+
+Here we introduce the name of the function with the keyword of the function and introduce our variable name and define a dictionary called MyDict. And I write for for. In the Try we specify that value that is called mydict and its value.
+Call the function with a initial list. With the find_num ([1,2,3]) to guide the program path to the entry into this function.
+TRY command: Make the value of Valio a increase in value if that Excption Keyerror with zero value
+Now I want to report this dictionary in the form of Return.
+We can run the program by simultaneously clicking Shift+F10.
+The output shown in this way {1: 0, 2: 0, 3: 0} means the first, second and third items are repeated.
+Here we have a semantic error and the amount must
+mydict [item] = 1
+Consider. With this change, the second execution gives the result {1: 0, 2: 0, 3: 0}. That is the right result.
+Changes in input numbers cause changes in output
+nums = find_num ([1,2,3,2,3,4])
+Result: {1: 1, 2: 2, 3: 2, 4: 1}
+The purpose of familiarity with creating a function, creating a module, working with dictionary, and conditional sentences, and Try Excption
+
+
+
+def find_num(myList):
+	myDict={}
+	for item in myList:
+		try:
+		    myDict[item]+=1
+		except KeyError:
+		    myDict[item]=1
+	return myDict
+
+
+nums=find_num([1,2,3,2,3,4])
+print(nums)
+What does the above code say?
+This code defines a function called "find_num" that takes a list of numbers as input and calculates the number of repetitions of each number in a dictionary. In this ring, for each element in the list, it is attempted to put that element as a key in the dictionary. If there is a key, the value of the key will be added, otherwise the key will be added to the dictionary with a value of 1.
+
+He then returns the dictionary function as an output.
+
+Finally, the function calls the "find_num" with the list [1, 2, 3, 2, 3, 3] and store the result in the Nums variable. It then prints the NUMS dictionary values. This means printing the number of repetitions of each number on the list.
+Python mini_projects (2)
+Exlanation:
+Implementation of the Calculation Checker is a function that checks the simple compact calculations between the numbers and provides the user according to the checks it makes. Input from the sequence of numbers as an input operator that must be provided on these numbers and your end result is under the title of Target Value. Some of the requirements for this intended user to do so can not define any argument, so your function must have the ability to consider an argument for the operator. The argument is related to Variable Lent and can be one to 10 and Target Value must be considered "and your code has the ability to get wrong if the Target Value had entered the user, so that the user is based on calculations. It was less than what the user had entered to say Lower (Choose less) and if it was bigger, to choose more.
+
+Our inputs in this project are a name or names that can get the desired number of inputs. We consider our operators' differentials. And it is except for the Python law that these defects should be introduced at the end of the expression.
+Now we go to the body of these Decision Making: I introduce a variable under the name of Result and a loop that comes and operates on this *num.
+And remember the nums based on the results he wants to update and the update will be collected.
+And the initial value of Result must be num.
+The same is true for the subtraction operator, but the only difference is that it uses the subtraction instead of the sum.
+Def Calculation (Target, Num, *Nums, Operator = '+'):
+
+    result = num
+    if operator=='+':
+        for item in nums:
+            result+=item
+    elif operator=='-':
+        for item in nums:
+            result-=item
+    else:
+        print('choose between + and - operator')
+    return result
+
+final_result=calculation(1,2,3,4)
+print(final_result)Calculations are true because it considers the initial amount of yam as a goal. Now we want to check if the TARGE-VALUE II was entering as the result that our calculations have returned.
+And it is older or smaller and let us know and let us know another function called Checker.
+The job is to take two variables called Target and Result
+Target: What the user has entered and
+Micro: The result that our function has calculated
+And I would come with if and do it that if my goal was less than the micro, we would pass, and if it were bigger, the pass and finally if none were the goal and the result.
+And remember to print a jack. Then I call the chicker function to print before the Result
+Def Calculation (Target, Num, *Nums, Operator = '+'):
+
+    result = num
+    if operator=='+':
+        for item in nums:
+            result+=item
+    elif operator=='-':
+        for item in nums:
+            result-=item
+    else:
+        print('choose between + and - operator')
+
+        checher(target, result)
+    return result
+def checker(target, result):
+    if target<result:
+        print('true target is greater that your selected target')
+    elif target>result:
+        print('true target is lower that your selected target')
+
+    else:
+        print('your target is equal to our result')
+
+final_result=calculation(1,2,3,4)
+print(final_result)
+
+We will execute and see the changes given to the code:
+And we see the Checker doing the right thing.
+What does the above code say?
+
+This code defines a function called "Calculation" that performs an operation using input arguments and returns the result.
+
+In the first line, the "Calculation" function accepts four arguments: "Target", "Num", "*Nums", and "Operator". "Target" and "Num" are two numbers used for operations. "*Nums" is a changeable parameter and is received as a Tuple from additional numbers. "Operator" is an optional parameter whose default value is "+".
+
+In the second line, the "result" variable is initially "num". This variable is used to store the outcome of the operation.
+
+In the third line, using the condition of "Operator == '+'", examines whether the "+" operator has been selected. If this condition is met, a loop of all elements will be created in "*Nums" and each element will be added to "Result" respectively.
+
+In the fifth line, using the condition "Operator =="-'", it is checked whether the"-"operator is selected. If this condition is met, a loop of all the elements will be created in "*Nums" and each element will be reduced by "Result", respectively.
+
+In the seventh line, otherwise (when the operator is not " +" or " -") the message "Choose Between + and - Operator" is printed.
+
+In the ninth line, "Result" is returned as the output of the function.
+
+In line eleven, the "Calculation" function is called with arguments 1, 2, 3, 4 and the result is stored in the "Final_Result" variable.
+
+In line thirteen, the value of "Final_Result" is printed, which is the result of the calculated operation
+Let's get printing:
+def calculation(target, num, *nums, operator='+'):
+    result = num
+    if operator=='+':
+        for item in nums:
+            result+=item
+    elif operator=='-':
+        for item in nums:
+            result-=item
+    else:
+        print('choose between + and - operator')
+
+        checher(target, result)
+    return result
+def checker(target, result):
+    if target<result:
+        print('true target is greater that your selected target')
+    elif target>result:
+        print('true target is lower that your selected target')
+
+    else:
+        print('your target is equal to our result')
+
+final_result=calculation(1,2,3,4)
+print('the final result is %d' % final_result)
+
+We have the above program:
+OJECTS/Mini_Projects/Calchecker2.py
+The Final Result is 9
+As the characteristic of 9 is replaced by %D.
+Here we learned how to put the functions inside each other. We met the Decision Making sentences.
+What does the above code say?
+This code has a function called "Calculation" and a function called "checker" that performs the resulting and review of the result.
+
+In the second line, the "Calculation" function accepts four arguments: "Target", "Num", "*Nums", and "Operator". "Target" and "Num" are two numbers used for operations. "*Nums" is a changeable parameter and is received as a Tuple from additional numbers. "Operator" is an optional parameter whose default value is "+".
+
+In the third line, the "Result" variable is initialized with the value of "num". This variable is used to store the outcome of the operation.
+
+In the fourth line, using the condition of "Operator == '+'", it examines whether the "+" operator has been selected. If this condition is met, a loop of all elements will be created in "*Nums" and each element will be added to "Result" respectively.
+
+In the fifth line, using the condition "Operator =="-'", it is checked whether the"-"operator is selected. If this condition is met, a loop of all the elements will be created in "*Nums" and each element will be reduced by "Result", respectively.
+
+In the eighth line, otherwise (when the operator is not " +" or " -") the message "Choose Between + and - Operator" is printed.
+
+In line 10, the "checker (Target, Result)" function is called.
+
+In line thirteen, the "checker" function is defined, which accepts the two "Target" and "Result". In this function, the comparison between "Target" and "Result" is made and the appropriate message is printed.
+
+In the 16th line, the "Calculation" function is called with arguments 1, 2, 3, 4 and the result is stored in the "Final_Result" variable.
+
+In the 18th line, the phrase 'The Final Result Is % D' % Final_result is printed, which shows the result of the calculated operation with a message.
+Python mini_projects (3)
+New Issue Design: Implementing the class structure for editing strings, which inside this class is a Find method to find a sub -string inside the input string and the Replace method to replace a sub -strand with a new sub -string and new subcutaneous The get method for displaying the final output or the final output to the user and this class wants to call in another module.
+
+I write to define the class and name it. And because this class has no inheritance, we consider without entrance.
+Now we go to the definition of the variables that their scopes are in the classroom.
+And finally we define the Find function.
+To define the Find function: The first input variable is all SELF classes. With this, you can easily access the variables that are class scopes. We want to find a subcategory inside a string as long as my variable value is not larger than self.total_str_
+What happens in the ring: If ... do something for me: increase the two markers and if they were not equal to each other, and so on.
+We define a start and end with 0 values, we can have a counters inside this Statement. And now we look at End.
+The plural sign means concanicating.
+
+class String_Editting:
+    def __init__(self,total_str,old_substr, new_subsrt):
+        self.total_str_=total_str
+        self.old_substr_=old_substr
+        self.new_substr_=new_substr
+        self.new_str=total_str
+        result=self.find()
+        
+        if result==False:
+            print('your substr is not in total str')
+        else:
+            self.new_str=self.replace(result[0],result[1])
+            
+
+    def find(self):
+        i=0
+        j=0
+
+        start=0
+        end=0
+        while i<len(self.total_str_):
+            if self.total_str_[i]==self.old_substr_[j]:
+                
+                if j==0:
+                    start=i
+                if j==len(self.old_substr_)-1:
+                    end=i
+                    return start,end
+                i+=1
+                j+=1
+            else:
+                i+=1
+                j=0
+
+
+            
+            return False
+
+        def replace(self,start,end):
+
+            return self.total_str_[:start]+self.new_substr_+self.total_str_[end+1:]
+
+        def get(self):
+            return self.new_str
+
+        obj=String_Editting('I am Elham', 'Elham', 'Fazel')
+        print(obj.get())
+What does the above code say?
+This code defines a class called "String_Editting" used to edit strings.
+
+In the second line, the "INIT" function is defined. This function receives three arms of "tootal_str" (total string), "Old_substr" (old subdivision) and "new_substr" (new subcategory). It then assigns the received values ​​to the appropriate class variables. It also calls the "Find" function and stores the result in the "Result" variable.
+
+In the fourth line, using the condition of "Result == false" examines whether the old subdivision is present in the whole field. If the condition is in place, the message "Your Substr is not in Total Stre" will be printed. Otherwise, by calling the "Replace" function, it replaces the old subdivision with the new subdivision in the whole field.
+
+In the seventh line, the "Find" function is defined. This function has a while loop that moves on the whole string. At each stage, if the current character of the whole string matches the old character, the Start and END variables are updated. If, after comparison with the old sub-length length, J is equal to Len (Self.old_substr _)-1, Start and End values ​​are assigned to the same ID values ​​and return the value (Start, End) function. Otherwise, variables I and J will increase and in each mode J is zero.
+
+In line 20, the "replace" function is defined. This function replaces new values ​​of the string according to the range between Start and End and returns the result.
+
+In line twenty -third, the "get" function is defined. This function returns the final string (after editing).
+
+On the twenty -fifth line, an object of the "String_Editting" class is created with the 'I am Iman', 'Iman' and 'Fazel'.
+
+In line of twenty -seven, the final string value (with Freight
+Python mini_projects (4)
+Implementation of class structure to change files: Like reading line -by -line as a sum of file, writing a content with different modes, creating a new directory or folder with OS library, deleting a number of directors and files on the list with OS library, A method to erase a series of directors and files whose addresses are in a file or directory
+
+What the Readline method does: reads the file by line and if it is not a different line it will fall in the Line content.
+The following command means what is a file we want to access? This command is for empty folders.
+if os.path.isfile ():
+It is used for covers full of recipes.
+
+shutil.rmtree(item)
+
+import os
+class File_Manipulator:
+    def __init__(self):
+	    pass
+    def read(self,file_address,type):
+	    if type=='line':
+		    lines=[]
+		    while True:
+			    file = open(file_address, 'r',encoding='utf8')
+			    line=file.readline()
+			    file.close()
+			    lines.append(line)
+			    if not line:
+				    break
+	    elif type=='total':
+		    file= open(file_address, 'r')
+		    lines=file.readlines()
+		    file.close()
+	    else:
+		    print('choose corect type of reading mode')
+		    content=''.join(lines)
+	    return content
+    def write(self,fiile_address,content,mode='a+'):
+	    file= open(file_address, mode, encoding='utf8')
+	    file.write(content)
+	    file.close()
+    def copy(self,add1,add2):
+	    content=self.read(add1,'total')
+	    self.write(add2,'a+')
+    def new_folder(self,folder_address):
+	    os.makedirs(folder_address)
+    def remove(self,add_list):
+	    for item in add_list:
+		    if os.path.isfile(item):
+			    os.remove(item)
+		    elif os.path.isdir(item):
+			    shutil.rmtree(item)
+    def existence(self,file_address):
+        if os.path.exists(file_address):
+            print('I find it')
+        else:
+            print('where is it?')
+obj= File_Manipulateor()
+obj.existence('sample.txt')
+
+خطا: 
+import os
+class File_Manipulator:
+    def __init__(self):
+	    pass
+    def read(self,file_address,type):
+	    if type=='line':
+		    lines=[]
+		    while True:
+			    file = open(file_address, 'r',encoding='utf8')
+			    line=file.readline()
+			    file.close()
+			    lines.append(line)
+			    if not line:
+				    break
+	    elif type=='total':
+		    file= open(file_address, 'r')
+		    lines=file.readlines()
+		    file.close()
+	    else:
+		    print('choose corect type of reading mode')
+		    content=''.join(lines)
+	    return content
+    def write(self,fiile_address,content,mode='a+'):
+	    file= open(file_address, mode, encoding='utf8')
+	    file.write(content)
+	    file.close()
+    def copy(self,add1,add2):
+	    content=self.read(add1,'total')
+	    self.write(add2,'a+')
+    def new_folder(self,folder_address):
+	    os.makedirs(folder_address)
+    def remove(self,add_list):
+	    for item in add_list:
+		    if os.path.isfile(item):
+			    os.remove(item)
+		    elif os.path.isdir(item):
+			    shutil.rmtree(item)
+    def existence(self,file_address):
+        if os.path.exists(file_address):
+            print('I find it')
+        else:
+            print('where is it?')
+obj= File_Manipulateor()
+obj.existence('sample.txt')
+What does the above code do line by line?
+This code defines a class called file_manipulator that performs various operations on the files. This class contains the following methods:
+
+ __init__: This method is the creator of the class and does not perform any specific operations.
+
+ Read: This method based on the type of input (Type) reads and returns the content of a file. If the reading type is an line, it reads the file lines as each single and stored in a list, and if the readal reads, it will read and return all the file lines as a list.
+
+ Write: This method writes the content given to a file with a specified address (file_address). The Mode parameter specifies the type of writing and its default is A+, which adds to the file to the file.
+
+ Copy: This method reads one file and copies its content to another file (Add2). First, using the Read method, read the content of the first file and then uses the read content to the second file using the Write method.
+
+ New_folder: This method creates a new folder with a specified address (folder_address).
+
+ Remove: This method receives a list of file or folder addresses and deletes them. If the element in question is a file, it will delete it and if it is a folder, it will delete it with internal contents.
+
+ Existence: This method receives the address of a file and checks if the file is desired. If any, the message "I find it" and otherwise the message "where it is?" Prints.
+
+After defining the File_Manipulator class, an object called OBJ is made of this class. The existence method is then called on the built object to check the 'sample.txt' file.
+What does the following code do?
+
+
+import os
+class File_Manipulator:
+    def __init__(self):
+	    pass
+    def read(self,file_address,type):
+	    if type=='line':
+		    lines=[]
+		    while True:
+			    file = open(file_address, 'r',encoding='utf8')
+			    line=file.readline()
+			    file.close()
+			    lines.append(line)
+			    if not line:
+				    break
+	    elif type=='total':
+		    file= open(file_address, 'r')
+		    lines=file.readlines()
+		    file.close()
+	    else:
+		    print('choose corect type of reading mode')
+		    content=''.join(lines)
+	    return content
+    def write(self,file_address,content,mode='a+'):
+	    file= open(file_address, mode, encoding='utf8')
+	    file.write(content)
+	    file.close()
+    def copy(self,add1,add2):
+	    content=self.read(add1,'total')
+	    self.write(add2,content,'a+')
+    def new_folder(self,folder_address):
+	    os.makedirs(folder_address)
+    def remove(self,add_list):
+	    for item in add_list:
+		    if os.path.isfile(item):
+			    os.remove(item)
+		    elif os.path.isdir(item):
+			    shutil.rmtree(item)
+    def existence(self,file_address):
+        if os.path.exists(file_address):
+            print('I find it')
+        else:
+            print('where is it?')
+obj = File_Manipulator()
+obj.new_folder('your_folder')
+
+
+This code defines a class called file_manipulator that performs various operations on the files. The functions and methods defined in this class are:
+
+ __init __ (SELF): A constructive method that does not perform any operation.
+
+ Read (Self, File_Address, Type): A method that reads the content of a file and returns to the line (type = 'line') or completely (type = 'Total') based on the specified type.
+
+ Write (Self, File_Address, Content, Mode = 'A+'): A method that stores the content given to the specified file. The writing mode to the file is determined using the Mode parameter, which is by default 'A+'.
+
+ Copy (Self, Add1, Add2): A method that copies the content of the first file to the second file. The content of the first file is read first and then written to the second file.
+
+ New_folder (Self, Folder_Address): A method that creates a new folder with the specified address.
+
+ Remove (Self, Add_list): A method that deletes the files and folders in the Add_list list. If an element of add_list is a file, the file will be deleted and if a folder is, that folder and all its content will be deleted.
+
+ Existence (Self, File_Address): A method that checks whether there is a file with the specified address, and prints according to the appropriate label result.
+
+Finally, a sample of this class is called OBJ, and by calling the new_folder method, a folder called 'your_folder' is created.
+
+
+Python Mini_Projects(5)
+Explanation:
+Design a very simple text generator:
+
+The main purpose of producing the text in a machine and random and merely "This is a random task: the system itself argues what words to use.
+Using the dictionary and the word structure and a series of prasses, we use the Pickle Dictionary and the dictionary is written directly into the file of this dictionary as Pickle. Based on the Frecticonis in the text and that artificial text we use this approach, and then we store the textile text in a text file, and what we do is a set of modules and put those mazols together. We give and make a package, and we want to use this package in another function/module, and the user must choose the number of tweets in the text.
+ These text files from Twitter Carroll (collected)
+We have a database that is the same as the tweets, and we want to do them the next step and the next step we want to do the counting operation and somehow our main process is here, and in the next step, let our text be granted or use The parameters we counted and somehow arguments and inferences, and then let's save the Text Gen. again.
+
+Each of these three sections is the three modules we want to design and put on the code and put it in a package and use it, and then we click on this package.
+
+Glob is used to access files.
+I want two stars, the files in this section.
+With Open has both opening and closing the file
+I run lines by line by the For command.
+Split can do separation. Reads the line and I do that line based on the separation load mark.
+With Join we turn this code into strang. Some uppercase letters in the texts that I want to shrink and then come to Split based on the empty space:
+The output that gives is a list that is a list of a word from inside each house.
+I create a list of tweets and add the tweet.
+I create a list of tweets with Len and Appended Len Tweets.
+And do some almost time -consuming calculations.
+
+import glob
+def read_files():
+    tweets=[]
+    lens=[]
+    for file in glob.glob('Health-Tweets/**'):
+	    with open (file,'r',encoding='utf-8',errors='ignore') as f:
+		    lines=f.readlines()
+		    for line in lines:
+			    tweet=''.join(line.split('|')[2:]).strip().lower().split('')
+			    tweets.append(tweet)
+			    lens.append(len(tweet))
+    return tweets,lens
+read_files()
+
+What does the above code say?
+This code defines a function called "Read_files" that accesss the files in the "Health-Tweets" folder and read and process their content.
+
+The first line of "Import Glob" provides the functions needed to search for files in the operating system.
+
+Then, a list called "tweets" and a list called "Lens" is defined to save the contents of the files and their length.
+
+Then, using the "for" loop and the "glob.glob" function, all files in the "Health-Tweets" folder are found and processed in order.
+
+Inside the loop, the file opens using the "open" function and its lines are read.
+
+For each line, first using the "Split" function, the line based on the "|" It is separated. Then, with the "Join", "Strip" and "Lower" functions, the white space is deleted and the letters become small.
+
+The result is finally added as a list of TWEETS in the list of "tweets" and its length is included in the "Lens" list.
+
+Finally, the "Read_files" function returns the list of "tweets" and the "Lens" list as the output.
+
+To execute this code, the GLOB and Read_files functions are called and the output is a pair of recurrent value from the Read_files function.
+Errors = 'Ignore' means that there was an error everywhere.
+
+Now if we want to see the files step by step, we will add the print (file).
+Now by executing the following code
+import glob
+
+def read_files():
+    tweets = []
+    lens = []
+    for file in glob.glob('Health-Tweets/**'):
+        with open(file, 'r', encoding='utf-8', errors='ignore') as f:
+            print(file)
+            lines = f.readlines()
+        
+        for line in lines:
+            tweet = ''.join(line.split('|')[2:]).strip().lower().split(' ')
+            tweets.append(tweet)
+            lens.append(len(tweet))
+        
+    return tweets, lens
+
+read_files()
+
+The 'Health-TWEETS file information was read and was placed in Tweets, Lens.
+This code implements a function called Read_files that returns a list of tweets and the length of each tweet.
+
+ In the first line, the Glob module enters. This module enables us to use reproductive patterns to search for files in directors.
+
+ The Read_files function is defined and a empty list called Tweets and an empty list called Lens.
+
+ A for for a loop begins for each file found using the 'Health-Tweets/**' pattern in the "Health-Tweets" directory. This pattern means searching for all files and subdivisions in the "Health-Tweets" directory.
+
+ Inside the For loop, the file opens using Open and the 'r' parameters for reading mode and 'uTF-8' to decrypt the contents of the file. Errors = 'Ignore' parameter is also used to behave in case of decryption errors.
+
+ Then, the file name is printed as the output to display which file is currently reading.
+
+ The contents of the read file are saved in line by line in the list of Lines.
+
+ Another for loop begins inside the previous loop, which runs for each line in the list of Lines.
+
+ Inside the second for loop, the current line using Split ('|') by character | They are divided into different parts and use Join (Line.split ('|') [2:]), Episode 2 re -connects to a string. The extra distances are then removed before and after the strand, and the Lower () is converted to lowercase letters. Finally, using Split (''), the string is converted to a list of words.
+
+ The new tweet is listed on the TWEETS list and the Tweet is listed in the Lens list.
+
+ After the end of the second for loop,
+
+Come on to speed up and store information.
+The concept in Python is called Pickle: We want to sleep and keep these files out of it. WB
+A binary storage is a format to store Object Structures, and it helps to store exactly the same format as that watery, and when we call that pickle file it comes with the same structure.
+RB: We want to read and tweet.
+Listdir current directory list
+The result can be seen by implementing a line by line of each code at the foot.
+Running the code below Lens, Tweets is displayed
+
+import glob
+import pickle
+import os
+
+def read_files():
+    tweets = []
+    lens = []
+
+    if 'lens.pickle' not in os.listdir('.'):
+        for file in glob.glob('Health-Tweets/**'):
+            with open(file, 'r', encoding='utf-8', errors='ignore') as f:
+                print(file)
+                lines = f.readlines()
+
+                for line in lines:
+                    tweet = ''.join(line.split('|')[2:]).strip().lower().split(' ')
+                    tweets.append(tweet)
+                    lens.append(len(tweet))
+
+        with open('tweets.pickle', 'wb') as handle:
+            pickle.dump(tweets, handle)
+        with open('lens.pickle', 'wb') as handle:
+            pickle.dump(lens, handle)
+    else:
+
+        with open('tweets.pickle', 'rb') as handle:
+            tweets = pickle.load(handle)
+        with open('lens.pickle', 'rb') as handle:
+            lens = pickle.load(handle)
+  
+    return tweets, lens
+
+read_files()
+This program creates a function called Read_files that reads text files and extracts tweets. The code algorithm is as follows:
+
+1. Initially, there are three variables of TWEETS, Lens that are empty arrays.
+2. If there is no Lens.pickle file in the current path, the application will enter the IF condition.
+1. In this case, the program searchs all the files in the Health-Tweets folder through the glob.glob function.
+1. The program then reads the files in order and reads the lines of each file as string lists.
+1. For each line in the file, the program runs the following phrase:
+
+ It separates the lines using Split ('|') and only integrates the third element (including tweet) with Join, then deletes white distances and converts all words into lowercase letters.
+ It puts the converted tweet on the list of tweets.
+ It puts the converted tweet in the Lens list. 1. After reading all the files, the program stores two TWEETS and Lens list in tweets.pickle and lens.pickle files using the Pickle.dump function. 1. If there is a Lens.pickle file in the current path, the program will enter the Else condition. 1. In this case, the program loads the TWEETS and Lens list from tweets.pickle and lens.pickle files using the Pickle.load function. 1. Finally, the program returns the TWEETS and Lens list as the output of the Read_files function.
+
+Finally, the Read_files function is called to read the files and extract the relevant information.
+We were able to process the Kahn file as much as possible.
+And let's bring the texts we had in a list.
+Now we want to go to count or count:
+Here I produce Lens as much as the length of tweets.
+And I run the dictionary content with the following command.
+Pos_dict [index] = {}
+And on our tweets we hit a ring.
+Enumerate helps that the object we give it here and here is our tweet, both indexing and content itself.
+We specified the Insame with I and the content with Word.
+Now we want to create that dictionary and we will probably need a number of expansions
+Not all tweets are the same.
+Say the result in a pickle.
+What does the code below the line?
+
+from Preprocess3 import read_preprocess_files
+import os
+import pickle
+
+def simple_learner(tweets,lens):
+    pos_dict={}
+    if 'pos_dict.pickle' not in os.listdir('.'):
+    
+        for index in range(max(lens)):
+            pos_dict[index]={}
+
+        for tweet in tweets:
+            for i,word in enumerate(tweet):
+                try:
+                    pos_dict[i][tweet[i]]+=1
+                except KeyError:
+                    pos_dict[i][tweet[i]]=1
+                except IndexError:
+                    break
+                
+        with open('pos_dict.pickle', 'wb') as handle:
+            pickle.dump(pos_dict, handle)
+
+    else:
+        with open('pos_dict.pickle', 'rb') as handle:
+            pos_dict = pickle.load(handle)
+  
+    return pos_dict
+
+tw, l = read_preprocess_files()
+result= simple_learner(tw,l)
+The following code to line has the following function:
+
+ From the Preprocess3 module, enter the Read_preprocess_files function.
+ Enter the OS module.
+ Enter the Pickle module.
+ Define the Simple_learner function that uses two inputs of Tweets and Lens.
+ Check if there is a pos_dict.pickle file on the current route.
+ If there is no Pos_dict.pickle file:
+ Create an empty dictionary in POS_DICT for each index element in the range of Range (Max (Lens)).
+ For each tweet in tweets, for each pair (i, word) in the enumerate (tweet) function:
+ Try to increase the current amount of POS_dict [i] [Tweet [i]].
+ If there is no TWEET [i] key in pos_dict [i], create it with a value of 1.
+ Stop the loop if the Indexerror error occurs (by applying Break).
+ Use the Pickle.dump function to save pos_dict in the pos_dict.pickle file.
+ Otherwise (if there is a pos_dict.pickle file):
+ Using the Pickle.load function, load pos_dict from the pos_dict.pickle file.
+ Return Pos_dict.
+ Call the Read_preprocess_files function and save the return values ​​to tw and l.
+ Call the Simple_learner function with TW and L arguments and save the result in Result.
+
+In short, this code prefronts textual data and stores the number of repetitions of each word in each position in POS_DICT. If there is no pos_dict.pickle file, it stores POS_DICT in a file, otherwise loading POS_DICT from the file.
+
+What does the code below line work?
+
+   import random
+from Preprocess import *
+from Counting import *
+def generate(tweets_num,pos_dict,lens):
+    for num in range(tweets_num):
+        generated_text=''
+        text_len= random.randint(min(lens), max(lens))
+        for index in range(text_len):
+            words= list(pos_dict[index].keys())
+            freqs= list(pos_dict[index].values())
+            selected_word= random.choices(words,freqs)[0]
+            generated_text=generated_text+selected_word+' '
+
+        with open('generatedText.txt','a+') as f:
+            f.write(generated_text+'\n')
+
+    
+tw, l = read_preprocess_files()
+pd= simple_learner(tw,l)
+generate(50,pd,l)
+
+High Code Performance:
+This code creates a text file called "Generatedtext.txt", producing 2 random text lines. The function of the code is as follows:
+
+ In lines 1 and 2, the Random Library and two Preprocess and Counting modules are added to the code.
+ The Generate () function is defined that takes three inputs and performs text production operations.
+ In line 1, a ring is created to generate random text to generate the number of tweets_num.
+ Line 1 defines an empty string to store the production text.
+ Line 1 selects a random length for each generated text from the Min (Lens) to Max (Lens).
+ In lines 1 to 2, a loop is executed for each production text to equate the number of text words.
+ In line 1, a list of words in POS_DICT [index] (which is a dictionary) is made.
+ In line 1, a list of the frequency corresponding to each word is made in POS_DICT [index].
+ In line 1, a random word is selected from the list of words and abundance using random.choices ().
+ In line 1, the selected word is added to the production text.
+ In lines 1 to 2, it stores the production text in the "generatedtext.txt" file.
+ In lines 1 and 2, the read_preprocess_files () and simple_learner () functions are sounded to produce input data to generate text.
+ In line 1, the Generate () function is sounded with appropriate parameters to produce 2 lines of text.
+
+import random
+from Preprocess import *
+from Counting import *
+def generate(tweets_num,pos_dict,lens):
+    generated_text=[]
+    for num in range(tweets_num):
+        generated_text=''
+        text_len= random.randint(min(lens), max(lens))
+        for index in range(text_len):
+            words= list(pos_dict[index].keys())
+            freqs= list(pos_dict[index].values())
+            selected_word= random.choices(words,freqs)[0]
+            generated_text=generated_text+selected_word+' '
+        
+        generated_text.append(generated_text)
+        with open('generatedText.txt','a+') as f:
+            f.write(generated_text+'\n')
+
+    return generated_text
+    
+tw, l = read_preprocess_files()
+pd= simple_learner(tw,l)
+generate(50,pd,l)
+
+Function of the top of the line to the line:
+The following code you requested defines a function called "Generate" that creates a number of random texts and stores them in a file called "Generatedtext.txt".
+
+Initially, the Random Library and two Preprocess and Counting modules are entered for use in the code.
+
+The Generate function is then defined with three inputs: "Tweets_num" that specifies the number of texts generated, "pos_dict" which is a dictionary that considers the pairs of word-eravation for each index, and "Lens" which a list It is one of the sizes that specifies the minimum and maximum length of the text produced.
+
+Inside the Generate function, an empty list called "generated_text" is defined. Then a loop is created to produce the desired number of texts.
+
+At each ring, we cut the variable "generated_text" with an empty string and then produce the length of the text randomly in the designated interval. Then, in another loop, for each index during the text, we put the words in "pos_dict" with their abundance in the separate lists and randomly select a word and add to "generated_text".
+
+Then add the generated text to the "generated_text" list and continue in the next loop to produce the desired number of texts. In the last section, we save the generated texts in the "generatedtext.txt" file.
+
+Finally, return the variable "generated_text" as the function output.
+
+In the original code, other functions are also called, but their details are not visible in the above code.
+
+Now we want to create a package that must be named for naming
+Use __init__. This package can be imported out of the 5 project.
+
+What does the following code work?
+What does the code below line work?
+
+import glob
+import pickle
+import os
+
+print(os.path.dirname(__file__))
+def read_preprocess_files():
+    dir = os.path.dirname(__file__)
+    tweets = []
+    lens = []
+
+    if 'lens.pickle' not in os.listdir(dir):
+        for file in glob.glob(dir+'Health-Tweets/**'):
+            with open(file, 'r', encoding='utf-8', errors='ignore') as f:
+                print(file)
+                lines = f.readlines()
+
+                for line in lines:
+                    tweet = ''.join(line.split('|')[2:]).strip().lower().split(' ')
+                    tweets.append(tweet)
+                    lens.append(len(tweet))
+
+        with open('tweets.pickle', 'wb') as handle:
+            pickle.dump(tweets, handle)
+        with open('lens.pickle', 'wb') as handle:
+            pickle.dump(lens, handle)
+    else:
+
+        with open('tweets.pickle', 'rb') as handle:
+            tweets = pickle.load(handle)
+        with open('lens.pickle', 'rb') as handle:
+            lens = pickle.load(handle)
+  
+    return tweets, lens
+Code performance:
+The program opens a text file, reads the lines in the file, and extracts tweets after its pre -processing. It then calculates the length of each tweet and stores the results in two separate files (tweets.pickle and Lens.pickle).
+
+If there is a Lens.pickle file in the current work path, the program first reads the information from the Pickle files and stores it in the Tweets and Lens variables. Otherwise, the program reads all the files in the Health-Tweets folder, examines the lines and extracts tweets. It then stores the tweets and their length in the Pickle files to be used for the next time.
+
+Finally, the Read_preprocess_files function returns the list of tweets and Lens as the output.
+
+What does the code say below the line?
+
+import os
+import pickle
+
+
+dir= os.path.dirname(__file__)
+def simple_learner(tweets,lens):
+    pos_dict={}
+    if 'pos_dict.pickle' not in os.listdir(dir):
+    
+        for index in range(max(lens)):
+            pos_dict[index]={}
+
+        for tweet in tweets:
+            for i,word in enumerate(tweet):
+                try:
+                    pos_dict[i][tweet[i]]+=1
+                except KeyError:
+                    pos_dict[i][tweet[i]]=1
+                except IndexError:
+                    break
+                
+        with open(dir+'/pos_dict.pickle', 'wb') as handle:
+            pickle.dump(pos_dict, handle)
+
+    else:
+        with open(dir+'/pos_dict.pickle', 'rb') as handle:
+            pos_dict = pickle.load(handle)
+  
+    return pos_dict
+
+The code above defines a function named simple_learner. This receiving function has two arguments named tweets and lens and returns a dictionary named pos_dict.
+
+The lines of code work as follows:
+
+ Lines 1 and 2 import the os and pickle modules.
+ Line 4 stores the current file path in the dir variable.
+ We define the function simple_learner with two parameters tweets and lens.
+ In line 6, we define a dictionary called pos_dict.
+ In line 7, if the file pos_dict.pickle is not in the list of files in the dir path:
+ In lines 9 to 15, for each index in the range of the largest number in lens:
+ We add an (empty) tumble dictionary to pos_dict.
+ On lines 17 to 24, for each tweet in tweets:
+ For each index and word in the tweet:
+ If the word already exists in pos_dict[i], we increment its count by one.
+ Otherwise, we add the word to pos_dict[i] with a count of one.
+ If the index is greater than the length of the tweet, we stop the loop.
+ In line 27, using the pickle module, we store the pos_dict in the pos_dict.pickle file.
+ Otherwise (if the pos_dict.pickle file exists):
+ In lines 30 to 32, we load pos_dict from the pos_dict.pickle file using the pickle module.
+ On line 35, we return pos_dict.
+
+In short, this function is used to calculate the frequency of words in each index of tweets and stores the information in the pos_dict.pickle file so that the calculations are not repeated the next time the function is executed.
+Explain the following code line by line?
+
+from proj5.Counting2 import *
+from proj5.Preprocess3 import *
+from proj5.GenerateText2 import *
+
+text_number = input('write the number of texts you want: ')
+tw, l = read_preprocess_files()
+pd = simple_learner(tw, l)
+
+print(generate(int(text_number), pd, l))
+
+
+This code demonstrates a simple program that uses several module files. In short, the program generates some text using a model trained on previous data.
+
+Line by line explanation of the code is:
+
+ from proj5.Counting2 import *: This line imports the Counting2 package and makes all its members available.
+
+ from proj5.Preprocess3 import *: This line imports the Preprocess3 package and makes all its members available.
+
+ from proj5.GenerateText2 import *: This line imports the GenerateText2 package and makes all its members available.
+
+ text_number = input('write the number of texts you want: '): In this line, the user is asked to enter the number of texts he wants. This information is received by input and stored in the text_number variable.
+
+ tw, l = read_preprocess_files(): This line initializes the two variables tw and l using the read_preprocess_files function.
+
+ pd = simple_learner(tw, l): In this line, the trained model is built using simple_learner using the data of tw and l and stored in the pd variable.
+
+ print(generate(int(text_number), pd, l)): In this line, the generate function is called using the input text number (text_number) and model (pd) and previous data (l) and prints the output.
+
+
+
