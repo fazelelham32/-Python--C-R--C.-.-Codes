@@ -1,0 +1,148 @@
+# Principles of Programming:
+## Programming History:
+1- Programming in machine language: long strings 0 and 1
+2- Assembly Assembly Language: Low Level
+3. High Level Programming Languages: High Level
+High -level programming languages:
+1- Basic/vb/vb.net/Small BSIC/C/C ++/Objective C/C#
+2- Java, JavaScript
+3- PHP in the Web field:
+4- R, Matlab, Python Scientific Applications:
+We convert our need/ thinking into a source language: Source Code. And we translate it with a car translation software.
+The process of translating programs in two general ways: Offline: Compiles and is called compiler translator
+Online: Interpret Interpretation
+The interpreter program translates that moment and speeds down; But it's going
+Offline: C, C ++, C#, Java
+Online: php, matlab, javascript,
+When C is compiled, it is translated directly into the car language, but Java and C # are first compiled into a middle language, and at this time the performance is translated into the car language.
+
+### Types
+Type Casting can convert the data.
+
+Program Definition Parts: Complicated data structures
+Variable variables
+Function Function: Sub-Sub-Rutine
+Arrays arrays
+Structure Structure
+Class class
+Data+Control+Work+Class Event
+Php, basic, cobol command
+C, PASCAL FUNCTION: MAIN
+ C#, java class
+Object Oriented Programming
+
+
+
+### Programming language:
+Conditions: Conditions
+IF:
+
+ Commands:
+- Call Operation Call Operation: Input and Outgoing Operations
+Definition and Assignment Definition and Assignment: For example, N 10 has no output and everything happens in memory.
+- Return Return Return the result
+- Go to Go to: Discipline and Repeat
+Combined and Combined Recipes:
+- Block code with commands
+- Selection/Condition: IF, ELSE SWITCH, Select
+- Repeat for (Repeetti): For the number of repetitions specified and limited,
+ While: Unlimited repeat number and/or unlimited do-while and until
+Anything that can be done with for While can do it, but it is not true.
+- Manage exceptional exception of handling and Try-Catch
+Error Types:
+1- Grammar error: time writing app and before translating Syntax ERROR
+2- Error simultaneously with translation of Compile- Time ERROR
+3- Run-time Error Running Error
+4- Logical Error logical error (bug)
+
+Terms required to complete a programming language
+1- Order of Execution Order of Execution
+2- Condition, branching and choosing
+3. Repeat
+The presence of Go To makes it extremely difficult to disintegrate programs.
+Information+Operations = Program
+Operation+Data: Program
+
+Simple data types:
+- Numerical data: Correct - asyo - mixed
+- logical data: {0 and 1} or {True, False}
+- Text data: character, string
+  String Operation Object
+
+### Assignment Property Object
+We have an object called Clock that can show the current time.
+
+This way you can get the computer timing.
+
+Indentation indentation »is for better readability of the program.
+This way you can get the computer timing.
+
+Indentation indentation »is for better readability of the program.
+
+Decision -making is a sign of intelligence.
+Using the time we were able to turn our app into a smarter app.
+
+
+The two programs above are one.
+You can write a program in different ways.
+Types of commands:
+- do a job
+- Set a value/save one value in memory
+Read the numeric to see the couple or the individual:
+
+Health indicators:
+Health Index
+Body Mass Index (BMI)
+BMI = Weight/Height*Height
+58kg, 1.60m
+Less than 18.5 weight loss
+18.5 to 25 normal
+25 to 30 overweight
+30 to 35 Obesity Rank 1 BMI:
+35 to 40 Obesity Rank 2
+40 to the top of obesity
+
+Branch: Branching
+Drawing Gushes: Draw and Fill
+
+
+Randomization: Randomization
+Math.Getrandomnumb (M)
+The output of this function will be a random number between 1 and m.
+Work with pixel:
+GraphicSwindow.setpixel (X, Y, C)
+C: Color
+256 = 28
+28*28*28 = 16*106
+
+Fractal: FRACTAL
+Turtle: Turtle
+
+
+Spiral
+Play and run audio files
+Music notes
+Subroutins below apps
+SUB MySub
+….
+….
+….
+Endsub
+
+Arrays arrays
+Storing multiple data and associated with a name
+And access with the index
+Shap.s Getleft (…)
+Shapes.gettop (..)
+
+
+Conditioning to the upper wall: y <= 0
+
+Conditioning to the left wall: x <= 0
+The condition of collision to the right wall
+
+Losing a condition (crossing the bottom wall)
+
+TIMER TIME: Main Function: Regular, timed and alternate
+GUI Design: Graphic user interface
+SIN (ɵ) ɵ = 2πft
