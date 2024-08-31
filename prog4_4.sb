@@ -1,0 +1,15 @@
+TextWindow.WriteLine("This program calculates BMI.")
+TextWindow.WriteLine("")
+
+TextWindow.Write("Please enter your weight in KiloGrams (kg): ")
+W = TextWindow.ReadNumber()
+
+TextWindow.Write("Please enter your height in Meters (m): ")
+H = TextWindow.ReadNumber()
+
+BMI = W/(H*H)
+
+TextWindow.WriteLine("")
+TextWindow.WriteLine("Your BMI = " + BMI)
+TextWindow.WriteLine("")
+
